@@ -273,6 +273,28 @@
                                 <div class="wpforms-container wpforms-container-full 2020-reminders" id="wpforms-83">
                                     <form id="wpforms-form-83" class="wpforms-validate wpforms-form wpforms-ajax-form" data-formid="83" method="post" enctype="multipart/form-data" action="/">
                                         <div class="wpforms-head-container">
+
+                                            <form name="contact" method="POST" data-netlify="true">
+                                              <p>
+                                                <label>Your Name: <input type="text" name="2020-reminders" /></label>   
+                                              </p>
+                                              <p>
+                                                <label>Your Email: <input type="email" name="email" /></label>
+                                              </p>
+                                              <p>
+                                                <label>Your Role: <select name="role[]" multiple>
+                                                  <option value="leader">Leader</option>
+                                                  <option value="follower">Follower</option>
+                                                </select></label>
+                                              </p>
+                                              <p>
+                                                <label>Message: <textarea name="message"></textarea></label>
+                                              </p>
+                                              <p>
+                                                <button type="submit">Send</button>
+                                              </p>
+                                            </form>
+
                                             <div class="wpforms-title">2020 Reminders</div>
                                             <div class="wpforms-description">To be contacted regarding the availability and nearest retail location of New Orleans Original Shotgun Gingerbread Houses prior to November 15, 2020, please complete the following:</div>
                                         </div><noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript>
@@ -288,6 +310,28 @@
                                 </div> <!-- .wpforms-container -->
                             </div>
                             <div class="contact-form tab-content">
+
+                                <form name="contact" method="POST" data-netlify="true">
+                                  <p>
+                                    <label>Your Name: <input type="text" name="retailers-inquiry" /></label>   
+                                  </p>
+                                  <p>
+                                    <label>Your Email: <input type="email" name="email" /></label>
+                                  </p>
+                                  <p>
+                                    <label>Your Role: <select name="role[]" multiple>
+                                      <option value="leader">Leader</option>
+                                      <option value="follower">Follower</option>
+                                    </select></label>
+                                  </p>
+                                  <p>
+                                    <label>Message: <textarea name="message"></textarea></label>
+                                  </p>
+                                  <p>
+                                    <button type="submit">Send</button>
+                                  </p>
+                                </form>
+
                                 <div class="wpforms-container wpforms-container-full retainers-inquiry" id="wpforms-82">
                                     <form id="wpforms-form-82" class="wpforms-validate wpforms-form wpforms-ajax-form" data-formid="82" method="post" enctype="multipart/form-data" action="/">
                                         <div class="wpforms-head-container">
@@ -340,10 +384,10 @@
     /* ]]> */
     </script>
     <!--[if lte IE 8]>
-		<script type="text/javascript">
-			document.body.className = document.body.className.replace( /(^|\s)(no-)?customize-support(?=\s|$)/, '' ) + ' no-customize-support';
-		</script>
-	<![endif]-->
+        <script type="text/javascript">
+            document.body.className = document.body.className.replace( /(^|\s)(no-)?customize-support(?=\s|$)/, '' ) + ' no-customize-support';
+        </script>
+    <![endif]-->
     <!--[if gte IE 9]><!-->
     <script type="text/javascript">
     (function() {
