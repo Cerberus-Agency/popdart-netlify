@@ -1,0 +1,1009 @@
+html {
+	box-sizing: border-box;
+	overflow: hidden;
+	height: 100vw;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/******* MOBILE FIRST (AND UNIVERSAL) *******/
+
+
+/******* UTILITY CLASSES *******/
+
+.flex-mobile {
+	display: flex;
+}
+
+.flex-wrap-mobile {
+	flex-wrap: wrap;
+}
+
+.stuck {
+	position: fixed !important;
+}
+
+.desktop, a.desktop {
+	display: none;
+}
+
+.copyright {
+	font-size: 0.65em;
+	text-align: center;
+}
+
+.edit-link {
+	display: none;
+}
+
+.facebook-link {
+	height: 24px;
+	width: 24px;
+	margin: 1em;
+}
+
+.heading-image {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+	max-height: 100px;
+}
+
+.logo-container {
+	text-align: center;
+}
+
+/******* NAVIGATION *******/
+
+.main-navigation li {
+	float: none;
+}
+
+.menu-primary-container {
+	display: none;
+}
+
+.menu-primary-container.is-active {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 70px;
+	z-index: 100;
+}
+
+#primary-menu {
+	margin-left: -81%;
+	z-index: 100;
+}
+
+#primary-menu li {
+	background: white;
+	display: none;
+	margin: 0;
+	padding: .75em 1em;
+	width: 100vw;
+}
+
+.menu-primary-container.is-active #primary-menu li {
+	background: white;
+	display: block;
+}
+
+#primary-menu li a {
+	color: #cc3366;
+	text-decoration: none;
+}
+
+.site-header {
+	background-color: #cc3366;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 70px;
+	pointer-events: inherit;
+	position: fixed; /* still making it sticky, for what reason? -DRR */
+	top: 0;
+	width: 100vw;
+	z-index: 100;
+}
+
+.site-branding {
+	width: 100%;
+	padding-left: 0;
+    position: absolute;
+    z-index: 100;
+}
+
+.site-branding a.mobile {
+	position: absolute;
+	top: 2.35em;
+	left: 130px;
+}
+
+.site-info {
+	display: none;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#site-navigation {
+	position: absolute;
+    z-index: 100;
+    top: 0;
+    right: 0;
+}
+
+.site-title {
+	margin-left: .5em;
+}
+
+.site-title a {
+	background: url(../images/pdart-logo-white.svg) center center no-repeat;
+	display: inline-block;
+	height: 85px;
+	margin-top: 1em;
+	width: 109px;
+}
+
+ul#menu {
+	position: fixed;
+	z-index: 100;
+}
+ul#menu li {
+	list-style: none;
+	float: left;
+	display: inline-block;
+	padding: .5em 1em;
+}
+
+#contact div.wpforms-container-full .wpforms-form .wpforms-title {
+    font-size: 20px;
+}
+
+/******* CONTENT *******/
+
+
+html, body {
+    overflow: hidden;
+    height: 100%;
+}
+
+#container {
+  overflow: hidden;
+}
+
+.section {
+	height: 100vh;
+	width: 100vw;
+	padding-top: 300px;
+	position: absolute;
+	transform: translateY(100%);
+}
+
+.content.desktop, #instructions .desktop {
+	display: none;
+}
+
+.content.mobile, #instructions .mobile {
+	display: block;
+	padding: 5% 2%;
+}
+
+.content {
+	height: calc(100vh - 130px);
+	display: grid;
+  	place-items: center;
+	/*padding: 10% 20%;*/
+	width: 100vw;
+/*	position: absolute;
+	bottom: 0;*/
+}
+
+#intro {
+	background: #cc3366;
+	padding-top: 0;
+	position: fixed;
+	transform: translateY(0);
+	z-index: 5;
+}
+
+#history {
+	background: url(../images/history_400.png) 0 20px repeat-x;
+	z-index: 10;
+}
+
+#instructions {
+	background: url(../images/instructions_400.png) -26px 20px repeat-x;
+	z-index: 20;
+}
+
+#inspiration {
+	background: url(../images/inspiration_400.png) 0 20px repeat-x;
+	z-index: 30;
+}
+
+#contact {
+	background: url(../images/contact_400.png) -26px 20px repeat-x;
+	z-index: 40;
+}
+
+#history, #instructions, #inspiration, #contact {
+	/*background-size: 100% 150px;*/
+}
+
+#intro .content {
+	height: 100vh;
+	background-image: url(/wp-content/uploads/pdart-home-bluebox-mobile.png);
+	background-position: left 0% bottom 13% !important;
+	background-repeat: no-repeat;
+	background-size: 68%;
+	/*padding: 24% 2%;*/
+}
+
+#intro .content.mobile {
+	font-size: .8em;
+	line-height: 1.3;
+}
+
+#history .content {
+	background: #ffcc33;
+	/*padding: 1% 2%;*/
+}
+
+#instructions .content {
+	background: #99cc66;
+	height: calc(100vh - 130px);
+	/*padding: 3% 5%;*/
+}
+
+#inspiration .content {
+	background: #6699cc;
+	height: calc(100vh - 144px);
+	/*padding: 3% 5%;*/
+}
+
+#contact .content {
+	background: white;
+	height: calc(100vh - 148px);
+	/*padding: 1% 2%;*/
+}
+
+#history h2 {
+	font-size: 1em;
+	font-style: italic;
+	line-height: 1;
+	margin-top: 0;
+	margin-bottom: 12px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	width: 96%;
+}
+
+#history p {
+	font-size: .9em;
+	line-height: 1.3;
+}
+
+.history-title-decoration {
+	max-width: 150px;
+	margin: 4px auto;
+}
+
+#intro .introduction {
+	flex-basis: 60%;
+}
+
+.instruction {
+	background: white;
+	padding: 1.2em;
+	height: auto;
+	width: auto;
+}
+
+.instruction div {
+	padding: 0;
+}
+
+.instruction .flex {
+	display: flex;
+}
+
+.instruction-number {
+	color: lightgray;
+	font-size: 6em;
+	font-style: italic;
+	font-weight: 700;
+	flex-basis: 15%;
+}
+
+.instruction-image {
+	flex-basis: 85%;
+}
+
+.instruction-text {
+	flex-basis: 100%;
+	font-size: 12px;
+    font-weight: bold;
+}
+
+.ingredients {
+	display: none;
+}
+
+.ingredients figure {
+	margin-top: 0;
+}
+
+.tab-container {
+	height: 1.75em;
+}
+
+.tab {
+	background: #efefef;
+	flex-basis: 50%;
+	padding: .1em .5em;
+	z-index: 1;
+}
+
+.tab.active {
+	background: white;
+	border: 1px solid gray;
+    border-bottom: 1px solid white;
+    z-index: 2;
+}
+
+.tab-content {
+	background: #efefef;
+	padding: 1em;
+	position: absolute;
+	left: 0;
+	top: 2em;
+	z-index: 1;
+}
+
+.tab-content.active {
+	z-index: 2;
+	background: white;
+}
+
+
+/******* CONTENT ANIMATIONS *******/
+
+@keyframes slideTop{
+  0% {
+    transform: translateY(100%);
+    top: 100%;
+  }
+  100% {
+    transform: translateY(0%);
+    top: 40px;
+  }
+}
+
+.slideToTop {
+	animation: slideTop 1s ease forwards;
+}
+
+@keyframes slideBottom{
+  0% {
+    transform: translateY(0%);
+    top: 40px;
+  }
+  100% {
+    transform: translateY(100%);
+    top: 100%;
+  }
+}
+
+.slideToBottom {
+	animation: slideBottom 1s ease forwards;
+}
+
+
+/******* DESKTOP STYLES *******/
+
+
+@media (min-width: 1200px) {
+
+	html, body {
+	    overflow: hidden;
+	    height: 100%;
+	}
+
+	/******* UTILITY STYLES *******/
+
+	.alignwide {
+		margin: 0 calc(50% - 50vw);
+		max-width: 90vw;
+		width: 90vw;
+	}
+
+	.alignfull {
+		margin: 0 calc(50% - 50vw);
+		max-width: 100vw;
+		width: 100vw;
+	}
+
+	.max-width-container {
+		margin-left: auto;
+		margin-right: auto;
+		width: 1200px;
+	}
+
+	/******* NAVIGATION *******/	
+	
+
+	#primary-menu {
+	    margin-left: 0;
+	}
+
+	.menu-primary-container.is-active {
+    	position: inherit;
+    	top: 0;
+    }
+
+	#primary-menu li {
+		background: transparent;
+		display: inline-block;
+		margin-right: 2em;
+		width: auto;
+	}
+
+	#primary-menu li a {
+		color: white;
+	}
+
+	.site-branding {
+		padding-left: 0;
+		position: relative;
+		width: auto;
+	}
+
+	.site-header {
+		justify-content: flex-start;
+		padding-left: 1em;
+	}
+
+	#site-navigation {
+		margin-right: 1em;
+		position: relative;
+	}
+
+	.site-title {
+		margin: 0 2em 0 0em;
+	}
+
+
+	/******* CONTENT *******/
+
+	.section {
+		padding-top: 325px;
+	}
+
+	.section#contact  {
+		padding-top: 365px;
+	}
+
+	#history {
+		background: url(../images/history_400.png) left top repeat-x;
+		z-index: 20;
+	}
+
+	#instructions {
+		background: url(../images/instructions_400.png) -52px top repeat-x;
+		z-index: 20;
+	}
+
+	#inspiration {
+		background: url(../images/inspiration_400.png) left top repeat-x;
+		z-index: 30;
+	}
+
+	#contact {
+		background: url(../images/contact_400.png) -52px top repeat-x;
+		z-index: 40;
+	}
+
+	.content.mobile, a.mobile, #instructions .mobile {
+		display: none;
+	}
+
+	.content.desktop, a.desktop, #instructions .desktop {
+		display: block;
+	}
+
+	.content {
+		height: calc(100vh - 275px);
+/*		padding: 10% 20%;
+		width: 100vw;
+		position: absolute;
+		bottom: 0;*/
+		display: grid;
+  		place-items: center;
+
+	}
+
+	#instructions .content {
+		background: #99cc66;
+		height: calc(100vh - 300px);
+		/*padding: 1% 4%;*/
+	}
+
+	#inspiration .content {
+		background: #6699cc;
+		height: calc(100vh - 320px);
+		/*padding: 5% 20%;*/
+	}
+
+	#contact .content {
+		background: white;
+		height: calc(100vh - 365px);
+		/*padding: 1% 2%;*/
+	}
+
+	.contact-form {
+		flex-basis: 40%;
+		padding: 1em 2em;
+	}
+
+	#intro .content {
+		background-image: url(/wp-content/uploads/decoration-blue-quadrilateral.svg);
+		background-position: left 0% bottom 30% !important;
+		background-repeat: no-repeat;
+		background-size: 88%;
+		padding: 10% 20%;
+	}
+
+	#intro p {
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+	}
+
+	#history .content {
+		background: #ffcc33;
+		padding: 1% 20%;
+	}
+
+	#history h2 {
+		font-size: 2em;
+		font-style: italic;
+		margin-top: 0;
+		margin-bottom: 0;
+		padding: 0;
+		width: 48%;
+	}
+
+	.history-title-decoration {
+		max-width: 220px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#instructions .content {
+		padding: 10% 20%;
+	}
+
+	.instruction .flex {
+		font-size: 14px;
+		font-weight: 900;
+		line-height: 1.5;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.instruction div {
+		padding: .25em;
+	}
+
+	.instruction-image {
+		flex-basis: 40%;
+	}
+
+	.instruction-text {
+		flex-basis: 45%;
+	}
+
+	.ingredients {
+		display: block;
+	}
+
+	.tab {
+		display: none;
+	}
+
+	.tab-content {
+		background-color: white;
+		position: inherit;
+	}
+
+	.heading-image {
+    	margin-bottom: 1em;
+    }
+
+}
+
+/******* TABLET STYLES *******/
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+
+	.section {
+	    padding-top: 200px;
+	}
+
+	#history {
+		background: url(../images/history_400.png) 0 15px repeat-x;
+	}
+
+	#instructions {
+		background: url(../images/instructions_400.png) -26px 15px repeat-x;
+	}
+
+	.ingredients figure {
+		margin-top: 0;
+	}
+
+	#inspiration {
+		background: url(../images/inspiration_400.png) 0 15px repeat-x;
+	}
+
+	#contact {
+		background: url(../images/contact_400.png) -26px 15px repeat-x;
+	}
+
+	#history, #instructions, #inspiration, #contact {
+		background-size: 65% 200px;
+	}
+
+
+	body div.wpforms-container-full .wpforms-form * {
+		font-size: 90%;
+	}
+
+	body div.wpforms-container-full .wpforms-form input.wpforms-field-medium {
+		max-width: 100%;
+	}
+
+	/******* CONTENT ANIMATIONS *******/
+
+	@keyframes slideTop{
+	  0% {
+	    transform: translateY(100%);
+	    top: 100%;
+	  }
+	  100% {
+	    transform: translateY(0%);
+	    top: 50px;
+	  }
+	}
+
+	.slideToTop {
+		animation: slideTop 1s ease forwards;
+	}
+
+	@keyframes slideBottom{
+	  0% {
+	    transform: translateY(0%);
+	    top: 50px;
+	  }
+	  100% {
+	    transform: translateY(100%);
+	    top: 100%;
+	  }
+	}
+
+	.slideToBottom {
+		animation: slideBottom 1s ease forwards;
+	}
+
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  /* For portrait layouts only */
+ /* 	body .hamburger {
+		display: block;
+	}
+
+	.menu-primary-container { 
+		display: none;
+	}
+
+	#primary-menu {
+	    margin-left: -100%;
+	}
+
+	#primary-menu li {
+		background: white;
+		width: 81vw;
+	}
+
+	#primary-menu li a {
+		color: #cc3366;
+		text-decoration: none;
+		transition: text-decoration 0.5s ease;
+	}	*/
+
+	#intro .content {
+		background-size: 90% 27%;
+		/*padding: 7% 2%;*/
+	}
+
+	#history .content {
+		height: calc(100vh - 175px);
+		padding: 0;
+	}
+
+	#instructions .content {
+	    height: calc(100vh - 180px);
+	    padding: 0;
+	}
+
+	#inspiration .content {
+	    height: calc(100vh - 185px);
+	    /*padding: 5% 0;*/
+	}
+
+	#contact .content {
+		height: calc(100vh - 200px);
+		padding: 0;
+	}
+
+	$#intro .introduction {
+		flex-basis: 50%;
+		font-size: 1em;
+	}
+
+	.contact-forms-container {
+		 height: 500px;
+	}
+
+	.tab-container {
+		display: none;
+	}
+
+	.tab-content {
+		background: white;
+		width: 50%;
+		position: relative;
+	}
+
+	.wpforms-title {
+		display: block;
+	}
+
+	.logo-container {
+	    margin-top: 4em;
+	}
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  /* For landscape layouts only */
+/*  	body .hamburger {
+		display: block;
+	}*/
+
+	.flex {
+		/*flex-wrap: wrap;*/ /* why was this for? */
+	}
+
+	.max-width-container {
+		width: 1000px;
+	}
+
+	.menu-primary-container { 
+		display: none;
+	}
+
+	#primary-menu li {
+		background: transparent;
+		margin-right: 2em;
+		width: auto;
+	}
+
+	#primary-menu li a {
+		color: white;
+		text-decoration: none;
+		transition: text-decoration 0.5s ease;
+	}
+
+	#intro .content {
+		padding: 2% 0;
+	}
+
+	#history .content {
+		height: calc(100vh - 175px);
+		padding: 0;
+	}
+
+	#instructions .content {
+	    height: calc(100vh - 180px);
+	    padding: 0;
+	}
+
+	#inspiration .content {
+	    height: calc(100vh - 185px);
+	    padding: 5% 0;
+	}
+
+	#contact .content {
+		height: calc(100vh - 200px);
+		padding: 0;
+	}
+
+	#intro p {
+		font-size: .9em;
+    	line-height: 1.3;
+    	margin-top: -1em;
+	}
+
+	#instructions-slider.slick-slider {
+	    height: 200px;
+	}
+
+	#ingredients img {
+		max-width: 75%;
+		margin-left: auto
+		margin-right: auto;
+	}
+
+	.logo-container {
+		width: 18%;
+	}
+
+}
+
+/******* HAMBURGER MENU STYLES *******/
+
+@media only screen and ( max-width:960px ) {
+
+/*	body .hamburger {
+		display: block;
+	}
+
+	.menu-primary-container { 
+		display: none;
+	}*/
+
+	#site-navigation {
+		text-align: left;
+	}
+
+	.site-branding {
+	    /*width: auto;*/ /* this is a problem for mobile, as of Valentine's Day -DRR */
+	}
+}
+
+@media only screen and ( min-width:1024px ) {
+	body .hamburger {
+		display: none;
+	}
+
+	.menu-primary-container { 
+		display: block;
+	}
+}
+
+/****** CAPTIONS *******/
+figcaption,
+.wp-block-image .aligncenter > figcaption,
+.wp-block-image .alignleft > figcaption,
+.wp-block-image .alignright > figcaption,
+.wp-block-image.is-resized > figcaption,
+figcaption {
+	display: none;
+}
+
+/****** COLORS *******/
+.has-black-color {
+	color: black;
+}
+.has-white-color {
+	color: white;
+}
+.has-pop-d-art-blue-color {
+	color: #669966;
+}
+.has-pop-d-art-gold-color {
+	color: #ffcc33;
+}
+.has-pop-d-art-green-color {
+	color: #99cc66;
+}
+.has-pop-d-art-pink-color {
+	color: #cc3366;
+}
+
+/****** WP FORMS *******/
+
+div.wpforms-container-full {
+	width: 90%;
+}
+
+div.wpforms-container-full .wpforms-form {
+	font-size: 90%;
+}
+
+.wpforms-title {
+	display: none;
+}
+
+body div.wpforms-container-full .wpforms-form input[type="date"],
+body div.wpforms-container-full .wpforms-form input[type="datetime"],
+body div.wpforms-container-full .wpforms-form input[type="datetime-local"],
+body div.wpforms-container-full .wpforms-form input[type="email"],
+body div.wpforms-container-full .wpforms-form input[type="month"],
+body div.wpforms-container-full .wpforms-form input[type="number"],
+body div.wpforms-container-full .wpforms-form input[type="password"],
+body div.wpforms-container-full .wpforms-form input[type="range"],
+body div.wpforms-container-full .wpforms-form input[type="search"],
+body div.wpforms-container-full .wpforms-form input[type="tel"],
+body div.wpforms-container-full .wpforms-form input[type="text"],
+body div.wpforms-container-full .wpforms-form input[type="time"],
+body div.wpforms-container-full .wpforms-form input[type="url"],
+body div.wpforms-container-full .wpforms-form input[type="week"],
+body div.wpforms-container-full .wpforms-form select,
+body div.wpforms-container-full .wpforms-form textarea {
+	border: 1px solid #cc3366;
+}
+
+div.wpforms-container-full .wpforms-form .wp-forms-title {
+	color: #cc3366;
+	font-weight: 700;
+}
+
+body div.wpforms-container-full .wpforms-form input[type="submit"],
+body div.wpforms-container-full .wpforms-form button[type="submit"],
+body div.wpforms-container-full .wpforms-form .wpforms-page-button {
+	background-color: #cc3366;
+	border-radius: 4px;
+	color: white;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-required-label {
+	color: #cc3366;
+}
+
+div.wpforms-container-full,
+div.wpforms-container-full
+	.wpforms-form
+	*
+	div.wpforms-container-full
+	.wp-forms-description {
+	font-size: 0.8em !important; /* override plugin style */
+}
+
+div.wpforms-container-full {
+    display: flex;
+    flex-direction: column;
+    height: 69vh;
+    justify-content: center;
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  /* For portrait layouts only */
+  	.wpforms-title {
+		display: block;
+	}
+}
+
+@media (min-width: 800px) {
+	.wpforms-title {
+		display: block;
+	}
+
+	div.wpforms-container-full .wpforms-form input.wpforms-field-medium {
+		max-width: 100% !important; /* overrides plugin style that is loaded later */
+
+	}
+}
+
+.error-404 {
+	padding: 2em;
+}
