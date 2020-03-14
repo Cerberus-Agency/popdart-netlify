@@ -251,16 +251,16 @@ html, body {
 	line-height: 1.3;
 }
 
-#packaging { 
+.packaging { 
 	margin: 0 auto;
 	width: 90%; 
 }
 
-#example-house {
+.example-house {
 	flex-basis: 30%;
 }
 
-#intro-introduction {
+.intro-introduction {
 	flex-basis: 70%;
 }
 
@@ -563,6 +563,20 @@ html, body {
 		margin-left: auto;
 		margin-right: auto;
 		width: 50%;
+	}
+
+	.packaging { 
+		flex-basis: 60%;
+		margin: 0;
+		width: auto; 
+	}
+
+	.example-house {
+		flex-basis: 30%;
+	}
+
+	.intro-introduction {
+		flex-basis: 70%;
 	}
 
 	#history .content {
