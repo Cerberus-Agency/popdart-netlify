@@ -355,7 +355,7 @@ html, body {
 	grid-template-areas: "instruction-number instruction-image" "instruction-text instruction-text";
   	padding: 1.2em;
 	height: 320px;
-	width: 320px;
+	width: 320px !important;
 }
 
 .instruction-number { grid-area: instruction-number; }
