@@ -285,9 +285,9 @@ html, body {
 
 #history .content.mobile {
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: "history-header" "history-picture" "history-text";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "history-header" "history-picture", "history-text" "history-text";
 }
 
 .history-header { grid-area: history-header; }
