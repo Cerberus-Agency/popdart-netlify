@@ -206,7 +206,7 @@ html, body {
 
 #intro {
 	background: #cc3366;
-	margin-top: 70px;
+	margin-top: 60px;
 	padding-top: 0;
 	position: fixed;
 	transform: translateY(0);
@@ -216,7 +216,7 @@ html, body {
 #intro .content.mobile {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: .6fr .3fr;
+  grid-template-rows: 0fr .3fr;
   grid-template-areas: "big-picture big-picture big-picture" "little-picture intro-introduction intro-introduction";
   grid-row-gap: 10px;
 }
@@ -233,7 +233,11 @@ html, body {
 #intro .content.mobile .div3 { grid-area: 2 / 2 / 2 / 2; }
 
 .example-house {
-	margin: 0 .25em;
+	margin: 0 .5em;
+}
+
+.intro-introduction p {
+	width: 90%;
 }
 
 #history {
@@ -265,12 +269,13 @@ html, body {
 }
 
 #intro .content {
-	color: white;
-	height: 100vh;
 	background-image: url(../uploads/pdart-home-bluebox-mobile.png);
-	background-position: left 0% bottom 13% !important;
+	background-position: left 0% bottom 45% !important;
 	background-repeat: no-repeat;
-	background-size: 80% 20%;
+	background-size: 90% 20%;
+	color: white;
+	padding-top: 1em;
+	height: 100vh;
 }
 
 #intro .content.mobile {
