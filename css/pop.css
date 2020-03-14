@@ -171,7 +171,6 @@ ul#menu li {
 
 /******* CONTENT *******/
 
-
 html, body {
     overflow: hidden;
     height: 100%;
@@ -181,12 +180,20 @@ html, body {
   overflow: hidden;
 }
 
+.max-width-container {
+	max-width: 360px;
+}
+
 .section {
 	height: 100vh;
 	width: 100vw;
 	padding-top: 150px;
 	position: absolute;
 	transform: translateY(100%);
+}
+
+.section#contact {
+	padding-top: 165px;
 }
 
 .content.desktop, #instructions .desktop {
@@ -262,10 +269,6 @@ html, body {
 	background: url(../images/contact_400.png) -26px 20px repeat-x;
 	background-size: 100%;
 	z-index: 40;
-}
-
-#history, #instructions, #inspiration, #contact {
-	/*background-size: 100% 150px;*/
 }
 
 #intro .content {
