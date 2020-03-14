@@ -337,6 +337,11 @@ html, body {
 	display: none;
 }
 
+.ingredients h3 {
+	color: #cc3366;
+	text-align: center;
+}
+
 .ingredients figure {
 	margin-top: 0;
 }
