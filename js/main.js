@@ -179,10 +179,10 @@ var $hamburger = $('.hamburger');
 	$('.menu-primary-container').toggleClass('is-active');
 });
 
-$( '.menu a' ).on("click", function(){
-  	$('.hamburger').toggleClass('is-active');
-	$('.menu-primary-container').toggleClass('is-active');
-});
+// $( '.menu a' ).on("click", function(){
+//   	$('.hamburger').toggleClass('is-active');
+// 	$('.menu-primary-container').toggleClass('is-active');
+// });
 
 /*******  TABS  *******/
 
