@@ -218,6 +218,7 @@ html, body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: "big-picture big-picture big-picture" "little-picture intro-introduction intro-introduction";
+  grid-row-gap: 10px;
 }
 
 .big-picture { grid-area: big-picture; }
