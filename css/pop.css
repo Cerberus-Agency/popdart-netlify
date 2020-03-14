@@ -25,6 +25,14 @@ body {
 	flex-wrap: wrap;
 }
 
+.space-around {
+	justify-content: space-around;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
 .desktop, a.desktop {
 	display: none;
 }
