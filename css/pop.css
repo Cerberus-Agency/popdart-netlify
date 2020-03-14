@@ -17,7 +17,7 @@ body {
 
 /******* UTILITY CLASSES *******/
 
-.flex-mobile {
+.flex, .flex-mobile {
 	display: flex;
 }
 
@@ -877,6 +877,7 @@ input[type=text], input[type=email] {
     border-radius: 2px;
     color: #333;
     display: block;
+    font-family: 'Zilla Slab', sans-serif;
     font-size: 16px;
     padding: 6px 10px;
     height: 38px;
@@ -888,6 +889,7 @@ button[type="submit"]{
 	background-color: #cc3366;
     border-radius: 4px;
     color: white;
+    font-family: 'Zilla Slab', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
 }
