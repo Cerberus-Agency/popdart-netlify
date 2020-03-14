@@ -232,6 +232,7 @@ html, body {
 }
 
 #intro .content {
+	color: white;
 	height: 100vh;
 	background-image: url(../uploads/pdart-home-bluebox-mobile.png);
 	background-position: left 0% bottom 13% !important;
