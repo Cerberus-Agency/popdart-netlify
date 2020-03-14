@@ -8,6 +8,10 @@ html {
 	box-sizing: inherit;
 }
 
+body {
+	font-family: "Zilla Slab", sans-serif;
+}
+
 /******* MOBILE FIRST (AND UNIVERSAL) *******/
 
 
