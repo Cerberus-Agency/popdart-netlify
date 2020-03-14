@@ -27,6 +27,10 @@ body {
 	justify-content: space-around;
 }
 
+.space-between {
+	justify-content: space-between;
+}
+
 .align-items-center {
 	align-items: center;
 }
@@ -241,7 +245,8 @@ html, body {
 	background-image: url(../uploads/pdart-home-bluebox-mobile.png);
 	background-position: left 0% bottom 13% !important;
 	background-repeat: no-repeat;
-	background-size: 68%;
+	background-size: 80% 20%;
+	margin-top: 20px;
 }
 
 #intro .content.mobile {
@@ -353,6 +358,10 @@ html, body {
 
 .ingredients figure {
 	margin-top: 0;
+}
+
+.contact-form-container {
+	position: relative;
 }
 
 .tab-container {
