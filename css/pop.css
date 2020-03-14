@@ -205,10 +205,19 @@ html, body {
 
 #intro {
 	background: #cc3366;
+	margin-top: 70px;
 	padding-top: 0;
 	position: fixed;
 	transform: translateY(0);
 	z-index: 5;
+}
+
+#intro .content.mobile {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
 }
 
 #history {
@@ -242,7 +251,6 @@ html, body {
 	background-position: left 0% bottom 13% !important;
 	background-repeat: no-repeat;
 	background-size: 80% 20%;
-	margin-top: 20px;
 }
 
 #intro .content.mobile {
