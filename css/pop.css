@@ -286,6 +286,10 @@ html, body {
 	height: calc(100vh - 148px);
 }
 
+#intro .introduction {
+	flex-basis: 60%;
+}
+
 #history h2 {
 	color: #cc3366;
 	font-size: 1em;
@@ -297,21 +301,20 @@ html, body {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0;
-	width: 96%;
+	width: 91%;
+    text-align: center
 }
 
-#history p {
+#history p.history-introduction {
+	color: #cc3366;
 	font-size: .9em;
 	line-height: 1.3;
+	flex-basis: 60%;
 }
 
 .history-title-decoration {
 	max-width: 150px;
 	margin: 4px auto;
-}
-
-#intro .introduction {
-	flex-basis: 60%;
 }
 
 .instruction {
