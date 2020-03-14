@@ -884,7 +884,7 @@ input[type=text], input[type=email] {
     line-height: 1.3;
 }
 
-input[type="submit"]{
+button[type="submit"]{
 	background-color: #cc3366;
     border-radius: 4px;
     color: white;
