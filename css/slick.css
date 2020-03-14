@@ -131,8 +131,8 @@
     background: url(../images/pdart-instructions-arrow.svg) center center
         no-repeat;
     text-indent: -9999px;
-    height: 32px;
-    width: 48px;
+    height: 28px;
+    width: 52px;
 }
 .slick-next {
     right: -48px;
