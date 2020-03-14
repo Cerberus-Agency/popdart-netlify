@@ -256,6 +256,14 @@ html, body {
 	width: 90%; 
 }
 
+#example-house {
+	flex-basis: 30%;
+}
+
+#intro-introduction {
+	flex-basis: 70%;
+}
+
 #history .content {
 	background: #ffcc33;
 }
