@@ -231,6 +231,10 @@ html, body {
 #intro .content.mobile .div2 { grid-area: 2 / 1 / 1 / 1; }
 #intro .content.mobile .div3 { grid-area: 2 / 2 / 2 / 2; }
 
+.example-house {
+	margin: 0;
+}
+
 #history {
 	background: url(../images/history_400.png) 0 20px repeat-x;
 	background-size: 100%;
