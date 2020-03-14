@@ -246,10 +246,11 @@ html, body {
 
 #intro .content {
 	background-image: url(../uploads/pdart-home-bluebox-mobile.png);
-	background-position: left 0% bottom 45% !important;
+	background-position: left 0% bottom 30% !important;
 	background-repeat: no-repeat;
-	background-size: 90% 20%;
+	background-size: 135% 65%;
 	color: white;
+	line-height: 1.2;
 	padding-top: 1em;
 	height: 100vh;
 }
