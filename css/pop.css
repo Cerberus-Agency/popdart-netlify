@@ -214,12 +214,18 @@ html, body {
 }
 
 #intro .content.mobile {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(2, 1fr);
-	grid-column-gap: 10px;
-	grid-row-gap: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "big-picture big-picture big-picture" "little-picture intro-introduction intro-introduction";
 }
+
+.big-picture { grid-area: big-picture; }
+
+.little-picture { grid-area: little-picture; }
+
+.intro-introduction { grid-area: intro-introduction; }
+
 
 #intro .content.mobile .div1 { grid-area: 1 / 1 / 1 / 4; }
 #intro .content.mobile .div2 { grid-area: 2 / 1 / 1 / 1; }
