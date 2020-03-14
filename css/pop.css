@@ -168,10 +168,6 @@ ul#menu li {
 	padding: .5em 1em;
 }
 
-#contact div.wpforms-container-full .wpforms-form .wpforms-title {
-    font-size: 20px;
-}
-
 /******* CONTENT *******/
 
 
@@ -187,9 +183,9 @@ html, body {
 .section {
 	height: 100vh;
 	width: 100vw;
-	padding-top: 300px;
-	position: absolute;
-	transform: translateY(100%);
+	padding-top: 150px;
+/*	position: absolute;
+	transform: translateY(100%);*/
 }
 
 .content.desktop, #instructions .desktop {
@@ -499,7 +495,11 @@ html, body {
 	/******* CONTENT *******/
 
 	.section {
+		height: 100vh;
+		width: 100vw;
 		padding-top: 325px;
+		position: absolute;
+		transform: translateY(100%);
 	}
 
 	.section#contact {
