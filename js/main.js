@@ -118,7 +118,7 @@ $('#site-navigation').on('click', '.link-contact.clicked', function(event){
 /*******  SLICK SLIDER  *******/
 
 $(document).ready(function(){
-  $('#instructions-slider').slick({
+  $('#instructions-desktop-slider').slick({
     respondTo : 'window',
     mobileFirst : true,
     infinite: false,
@@ -179,7 +179,7 @@ var $hamburger = $('.hamburger');
 	$('.menu-primary-container').toggleClass('is-active');
 });
 /* hide menu after click */
-$( '.menu a' ).on("click", function(e){
+$( '.menu a' ).on("click", function(){
   	$('.hamburger').toggleClass('is-active');
 	$('.menu-primary-container').toggleClass('is-active');
 });
