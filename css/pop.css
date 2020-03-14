@@ -368,24 +368,14 @@ html, body {
 	padding: 0;
 }
 
-.instruction .flex {
-	display: flex;
-}
-
 .instruction-number {
 	color: lightgray;
 	font-size: 6em;
 	font-style: italic;
 	font-weight: 700;
-	flex-basis: 15%;
-}
-
-.instruction-image {
-	flex-basis: 85%;
 }
 
 .instruction-text {
-	flex-basis: 100%;
 	font-size: 12px;
     font-weight: bold;
 }
