@@ -216,7 +216,7 @@ html, body {
 #intro .content.mobile {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: .6fr .3fr;
   grid-template-areas: "big-picture big-picture big-picture" "little-picture intro-introduction intro-introduction";
   grid-row-gap: 10px;
 }
@@ -233,7 +233,7 @@ html, body {
 #intro .content.mobile .div3 { grid-area: 2 / 2 / 2 / 2; }
 
 .example-house {
-	margin: 0;
+	margin: 0 .25em;
 }
 
 #history {
