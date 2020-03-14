@@ -320,7 +320,7 @@ html, body {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0;
-	width: 91%;
+	width: 89%;
     text-align: center
 }
 
@@ -428,7 +428,7 @@ html, body {
   }
   100% {
     transform: translateY(0%);
-    top: 40px;
+    top: 30px;
   }
 }
 
@@ -439,7 +439,7 @@ html, body {
 @keyframes slideBottom{
   0% {
     transform: translateY(0%);
-    top: 40px;
+    top: 30px;
   }
   100% {
     transform: translateY(100%);
