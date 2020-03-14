@@ -264,8 +264,10 @@ html, body {
 }
 
 #history h2 {
+	color: #cc3366;
 	font-size: 1em;
 	font-style: italic;
+	font-weight: 700;
 	line-height: 1;
 	margin-top: 0;
 	margin-bottom: 12px;
@@ -529,7 +531,6 @@ html, body {
 		background-position: left 0% bottom 30% !important;
 		background-repeat: no-repeat;
 		background-size: 88%;
-		padding: 10% 20%;
 	}
 
 	#intro p {
@@ -540,7 +541,6 @@ html, body {
 
 	#history .content {
 		background: #ffcc33;
-		padding: 1% 20%;
 	}
 
 	#history h2 {
@@ -556,10 +556,6 @@ html, body {
 		max-width: 220px;
 		margin-left: auto;
 		margin-right: auto;
-	}
-
-	#instructions .content {
-		padding: 10% 20%;
 	}
 
 	.instruction .flex {
@@ -672,7 +668,6 @@ html, body {
 	.slideToBottom {
 		animation: slideBottom 1s ease forwards;
 	}
-
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
