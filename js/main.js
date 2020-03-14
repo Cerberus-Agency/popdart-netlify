@@ -178,11 +178,11 @@ var $hamburger = $('.hamburger');
 	$hamburger.toggleClass('is-active');
 	$('.menu-primary-container').toggleClass('is-active');
 });
-
-// $( '.menu a' ).on("click", function(){
-//   	$('.hamburger').toggleClass('is-active');
-// 	$('.menu-primary-container').toggleClass('is-active');
-// });
+/* hide menu after click */
+$( '.menu a' ).on("click", function(e){
+  	$('.hamburger').toggleClass('is-active');
+	$('.menu-primary-container').toggleClass('is-active');
+});
 
 /*******  TABS  *******/
 
