@@ -364,8 +364,9 @@ html, body {
 
 .instruction-text { grid-area: instruction-text; }
 
-.instruction div {
-	padding: 0;
+.instruction-slide {
+	width: 320px;
+	height: 320px;
 }
 
 .instruction-number {
