@@ -119,7 +119,9 @@ $('#site-navigation').on('click', '.link-contact.clicked', function(event){
 
 $(document).ready(function(){
   $('#instructions-desktop-slider').slick({
-    respondTo : 'window',
+    // respondTo : 'window',
+    slidesToShow: 1,
+    slidesToScroll: 1,
     mobileFirst : true,
     infinite: false,
     arrows: true,
@@ -129,7 +131,9 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $('#instructions-mobile-slider').slick({
-    respondTo : 'window',
+    // respondTo : 'window',
+    slidesToShow: 1,
+    slidesToScroll: 1,
     mobileFirst : true,
     infinite: false,
     arrows: true,
