@@ -51,13 +51,6 @@ body {
     margin: 1em;
 }
 
-.heading-image {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0;
-    max-height: 100px;
-}
-
 .logo-container {
     text-align: center;
 }
@@ -320,8 +313,6 @@ html, body {
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "instruction-number instruction-image" "instruction-text instruction-text";
     padding: 1.2em;
-    height: 320px;
-    width: 320px !important;
 }
 
 .instruction-number { grid-area: instruction-number; }
