@@ -454,7 +454,7 @@ html, body {
 /******* DESKTOP STYLES *******/
 
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
 
     html, body {
         overflow: hidden;
@@ -683,7 +683,7 @@ html, body {
 
 /******* TABLET STYLES *******/
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 
     #history {
         background: url(../images/history_400.png) 0 15px repeat-x;
@@ -735,7 +735,7 @@ html, body {
     }
 }
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:portrait) {
   /* For portrait layouts only */
   
   * {
@@ -817,7 +817,7 @@ html, body {
     }
 }
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:landscape) {
   /* For landscape layouts only */
     * outline {
         1px dotted red;
@@ -868,10 +868,7 @@ html, body {
 
 /******* HAMBURGER MENU STYLES *******/
 
-@media only screen and ( max-width:960px ) {
-    * {
-        outline: 1px dotted blue;
-    }
+@media only screen and ( max-width:768px ) {
     
     body .hamburger {
         display: block;
@@ -884,10 +881,6 @@ html, body {
     #site-navigation {
         text-align: left;
     }
-
-    .site-branding {
-        /*width: auto;*/ /* this is a problem for mobile, as of Valentine's Day -DRR */
-    }
 }
 
 @media only screen and ( min-width:1024px ) {
@@ -899,17 +892,6 @@ html, body {
         display: block;
     }
 }
-
-/****** CAPTIONS *******/
-figcaption,
-.wp-block-image .aligncenter > figcaption,
-.wp-block-image .alignleft > figcaption,
-.wp-block-image .alignright > figcaption,
-.wp-block-image.is-resized > figcaption,
-figcaption {
-    display: none;
-}
-
 
 /****** FORMS *******/
 input {
