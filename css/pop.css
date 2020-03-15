@@ -306,6 +306,10 @@ html, body {
     z-index: 20;
 }
 
+#instructions .instructions-header {
+    text-align: center;
+}
+
 #instructions .content {
     background: #99cc66;
     height: calc(100vh - 130px);
@@ -342,11 +346,11 @@ html, body {
 
 .ingredients {
     display: none;
+    text-align: center;
 }
 
 .ingredients h3 {
     color: #cc3366;
-    text-align: center;
 }
 
 .ingredients figure {
