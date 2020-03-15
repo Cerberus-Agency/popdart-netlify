@@ -79,7 +79,6 @@ body {
 .menu-primary-container.is-active {
     display: block;
     z-index: 100;
-    margin-top: 70px;
 }
 
 #primary-menu {
@@ -548,11 +547,11 @@ html, body {
         z-index: 40;
     }
 
-    .content.mobile, a.mobile, #instructions .mobile {
+    #intro .content.mobile, .content.mobile, a.mobile, #instructions .mobile {
         display: none;
     }
 
-    .content.desktop, a.desktop, #instructions .desktop {
+    #intro .content.desktop, .content.desktop, a.desktop, #instructions .desktop {
         display: block;
     }
 
@@ -560,7 +559,6 @@ html, body {
         height: calc(100vh - 275px);
         display: grid;
         place-items: center;
-
     }
 
     #instructions .content {
