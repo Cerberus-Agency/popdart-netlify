@@ -315,6 +315,11 @@ html, body {
     height: calc(100vh - 130px);
 }
 
+#instructions-mobile-slider {
+    overflow: hidden;
+    width: 320px;
+}
+
 .instruction-slide {
     background: white;
     display: grid;
