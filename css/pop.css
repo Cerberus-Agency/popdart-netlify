@@ -482,7 +482,7 @@ html, body {
         top: 0;
     }
 
-    #primary-menu li {
+    #primary-menu li, .menu-primary-container.is-active #primary-menu li{
         background: transparent;
         display: inline-block;
         margin-right: 2em;
