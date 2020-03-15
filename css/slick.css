@@ -19,9 +19,8 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-#instructions-mobile-slider.slick-slider {
+#instructions-mobile-slider.slick-slider, #instructions-slider.slick-slider  {
     background-color: white;
-    width: 80%;
 }
 
 #inspiration-slider.slick-slider {
@@ -32,7 +31,7 @@
     width: 275px;
 }
 
-@media (min-width: 600px) {
+/*@media (min-width: 600px) {
     #instructions-slider.slick-slider {
        width: 540px;
     }
@@ -40,7 +39,7 @@
     #inspiration-slider.slick-slider {
        min-width: 600px;
     }
-}
+}*/
 
 @media (min-width: 800px) {
     #inspiration-slider.slick-slider {
@@ -61,6 +60,10 @@
 .slick-list.dragging {
     cursor: pointer;
     cursor: hand;
+}
+
+#instructions .slick-list {
+    background: white;
 }
 
 .slick-slider .slick-track,
@@ -133,6 +136,10 @@
     text-indent: -9999px;
     height: 28px;
     width: 52px;
+}
+#inspiration-slider .slick-arrow {
+    background: url(../images/pdart-inspiration-arrow.svg) center center
+        no-repeat;
 }
 .slick-next {
     right: -48px;
