@@ -634,6 +634,10 @@ html, body {
 
     .history-picture { grid-area: history-picture; }
 
+    .history-picture img {
+        max-width: 600px;
+    }
+
     .history-text { grid-area: history-text; }
 
     .instruction .flex {
