@@ -134,6 +134,13 @@
     height: 28px;
     width: 52px;
 }
+#inspiration-slider .slick-arrow {
+    background: url(../images/pdart-inspiration-arrow.svg) center center
+        no-repeat;
+    text-indent: -9999px;
+    height: 28px;
+    width: 52px;
+}
 .slick-next {
     right: -48px;
 }
