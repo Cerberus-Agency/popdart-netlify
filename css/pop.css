@@ -308,6 +308,8 @@ html, body {
 
 #instructions .instructions-header {
     text-align: center;
+    width: 75%;
+    margin: 5px auto 10px;
 }
 
 #instructions .content {
@@ -316,8 +318,7 @@ html, body {
 }
 
 #instructions-mobile-slider {
-    overflow: hidden;
-    width: 320px;
+    width: 300px;
 }
 
 .instruction-slide-content {
