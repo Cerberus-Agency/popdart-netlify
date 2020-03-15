@@ -834,7 +834,7 @@ html, body {
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:landscape) {
   /* For landscape layouts only */
-/*    * outline {
+* outline {
         1px dotted red;
     }
 
@@ -878,7 +878,7 @@ html, body {
         font-size: .9em;
         line-height: 1.3;
         margin-top: -1em;
-    }*/
+    }
 }
 
 /******* HAMBURGER MENU STYLES *******/
