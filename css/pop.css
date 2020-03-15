@@ -710,17 +710,6 @@ html, body {
 		background: url(../images/contact_400.png) -26px 15px repeat-x;
 	}
 
-	#history, #instructions, #inspiration, #contact {
-		background-size: 65% 200px;
-	}
-
-	body div.wpforms-container-full .wpforms-form * {
-		font-size: 90%;
-	}
-
-	body div.wpforms-container-full .wpforms-form input.wpforms-field-medium {
-		max-width: 100%;
-	}
 
 	/******* CONTENT ANIMATIONS *******/
 
