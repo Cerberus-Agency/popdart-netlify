@@ -288,7 +288,7 @@ html, body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "history-header" "history-picture", "history-text" "history-text";
+  grid-template-areas: "history-header" "history-header", "history-text" "history-text";
 }
 
 .history-header { grid-area: history-header; }
@@ -360,7 +360,7 @@ html, body {
 
 .instruction-number { grid-area: instruction-number; }
 
-.instruction-image { grid-area: instruction-iimage; }
+.instruction-image { grid-area: instruction-image; }
 
 .instruction-text { grid-area: instruction-text; }
 
