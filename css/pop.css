@@ -334,7 +334,7 @@ html, body {
 
 .instruction-number {
     color: lightgray;
-    font-size: 6em;
+    font-size: 3em;
     font-style: italic;
     font-weight: 700;
 }
@@ -353,9 +353,9 @@ html, body {
     color: #cc3366;
 }
 
-.ingredients figure {
+/*.ingredients figure {
     margin-top: 0;
-}
+}*/
 
 /******* INSPIRATION *******/
 
