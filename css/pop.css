@@ -195,14 +195,6 @@ html, body {
     padding-top: 165px;
 }
 
-.content.desktop, #instructions .desktop {
-    display: none;
-}
-
-.content.mobile, #instructions .mobile {
-    display: block;
-}
-
 .content {
     height: calc(100vh - 130px);
     display: grid;
@@ -318,7 +310,7 @@ html, body {
 }
 
 #instructions-mobile-slider {
-    width: 300px;
+    width: 76%;
 }
 
 .instruction-slide-content {
