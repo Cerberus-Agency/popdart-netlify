@@ -231,7 +231,7 @@ html, body {
 }
 
 
-#intro .content.mobile {
+#intro .content.mobile .intro-container {
     display: grid;
     font-size: .8em;
     grid-template-columns: 1fr 1fr 1fr;
