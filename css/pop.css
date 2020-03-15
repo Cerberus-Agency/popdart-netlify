@@ -686,10 +686,6 @@ html, body {
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
 
-	.section {
-	    padding-top: 200px;
-	}
-
 	#history {
 		background: url(../images/history_400.png) 0 15px repeat-x;
 	}
