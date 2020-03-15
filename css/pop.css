@@ -828,10 +828,6 @@ html, body {
 		width: 1000px;
 	}
 
-	.menu-primary-container { 
-		display: none;
-	}
-
 	#primary-menu li {
 		background: transparent;
 		margin-right: 2em;
@@ -842,10 +838,6 @@ html, body {
 		color: white;
 		text-decoration: none;
 		transition: text-decoration 0.5s ease;
-	}
-
-	#intro .content {
-		padding: 2% 0;
 	}
 
 	#history .content {
@@ -873,21 +865,6 @@ html, body {
     	line-height: 1.3;
     	margin-top: -1em;
 	}
-
-	#instructions-slider.slick-slider {
-	    height: 200px;
-	}
-
-	#ingredients img {
-		max-width: 75%;
-		margin-left: auto
-		margin-right: auto;
-	}
-
-	.logo-container {
-		width: 18%;
-	}
-
 }
 
 /******* HAMBURGER MENU STYLES *******/
