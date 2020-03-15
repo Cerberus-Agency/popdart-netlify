@@ -742,6 +742,11 @@ html, body {
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
   /* For portrait layouts only */
+  
+  * {
+  	outline: 1px dotted green;
+  	}
+  	
  /* 	body .hamburger {
 		display: block;
 	}
@@ -767,7 +772,6 @@ html, body {
 
 	#intro .content {
 		background-size: 90% 27%;
-		/*padding: 7% 2%;*/
 	}
 
 	#history .content {
@@ -820,9 +824,9 @@ html, body {
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
   /* For landscape layouts only */
-/*  	body .hamburger {
-		display: block;
-	}*/
+	* outline {
+		1px dotted red;
+	}
 
 	.max-width-container {
 		width: 1000px;
@@ -870,14 +874,17 @@ html, body {
 /******* HAMBURGER MENU STYLES *******/
 
 @media only screen and ( max-width:960px ) {
-
-/*	body .hamburger {
+	* {
+		outline: 1px dotted blue;
+	}
+	
+	body .hamburger {
 		display: block;
 	}
 
 	.menu-primary-container { 
 		display: none;
-	}*/
+	}
 
 	#site-navigation {
 		text-align: left;
