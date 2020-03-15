@@ -16,6 +16,17 @@ body {
 
 /******* UTILITY CLASSES *******/
 
+@media only screen and (max-width: 600px) and (orientation:landscape) {
+    .forbidding-overlay {
+        background-color: rgba(0,0,0, 75);
+        position: absolute;
+        height: 100vw;
+        width: 100vw;
+        z-index: 100;
+    }
+}
+
+
 .flex, .flex-mobile {
     display: flex;
 }
