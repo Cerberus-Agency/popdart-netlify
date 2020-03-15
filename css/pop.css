@@ -320,7 +320,7 @@ html, body {
     width: 320px;
 }
 
-.instruction-slide-container {
+.instruction-slide-content {
     background: white;
     display: grid;
     grid-template-columns: 0.6fr 1.4fr;
