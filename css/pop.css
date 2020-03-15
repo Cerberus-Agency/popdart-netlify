@@ -378,7 +378,6 @@ html, body {
     z-index: 40;
 }
 
-
 #contact .content {
     background: white;
     height: calc(100vh - 148px);
@@ -418,6 +417,10 @@ html, body {
 .tab-content.active {
     z-index: 2;
     background: white;
+}
+
+#contact #retailers {
+    display: none;
 }
 
 
@@ -580,10 +583,7 @@ html, body {
         height: calc(100vh - 365px);
     }
 
-    .contact-form {
-        flex-basis: 40%;
-        padding: 1em 2em;
-    }
+/****** INTRO DESKTOP *******/
 
     #intro .content {
         background-image: url(../uploads/decoration-blue-quadrilateral.svg);
@@ -612,6 +612,8 @@ html, body {
     .intro-introduction {
         flex-basis: 70%;
     }
+
+/****** HISTORY DESKTOP *******/
 
     #history h2 {
         font-size: 2em;
@@ -644,6 +646,9 @@ html, body {
 
     .history-text { grid-area: history-text; }
 
+
+/****** INSTRUCTIONS DESKTOP *******/
+
     .instruction .flex {
         font-size: 14px;
         font-weight: 900;
@@ -668,6 +673,8 @@ html, body {
         display: block;
     }
 
+/****** CONTACT DESKTOP *******/
+
     .tab {
         display: none;
     }
@@ -681,13 +688,22 @@ html, body {
         margin-bottom: 1em;
     }
 
+    .contact-form {
+        flex-basis: 40%;
+        padding: 1em 2em;
+    }
+
+    #contact #retailers {
+        display: none;
+    }
+
 }
 
 /******* TABLET STYLES *******/
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
 
-/*    #history {
+    #history {
         background: url(../images/history_400.png) 0 15px repeat-x;
     }
 
@@ -702,7 +718,7 @@ html, body {
     #contact {
         background: url(../images/contact_400.png) -26px 15px repeat-x;
     }
-*/
+
 
     /******* CONTENT ANIMATIONS *******/
 
