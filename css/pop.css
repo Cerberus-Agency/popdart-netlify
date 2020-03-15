@@ -320,7 +320,7 @@ html, body {
     width: 320px;
 }
 
-.instruction-slide {
+.instruction-slide-container {
     background: white;
     display: grid;
     grid-template-columns: 0.6fr 1.4fr;
@@ -339,7 +339,7 @@ html, body {
 
 .instruction-number {
     color: lightgray;
-    font-size: 3em;
+    font-size: 4em;
     font-style: italic;
     font-weight: 700;
 }
