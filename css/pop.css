@@ -651,20 +651,16 @@ html, body {
 
     #history .history-container{
 	    display: grid;
-	    grid-template-columns: .4fr .6fr;
+	    grid-template-columns: 1fr 1fr;
 	    grid-template-rows: 1fr 1fr;
 	    grid-template-areas: "history-header history-header" "history-picture history-text";
-	    max-width: 68%;
+	    max-width: 65%;
 	    max-height: 65%;
     }
 
     .history-header { grid-area: history-header; }
 
     .history-picture { grid-area: history-picture; }
-
-    .history-picture img {
-        max-width: 600px;
-    }
 
     .history-text { grid-area: history-text; }
 
