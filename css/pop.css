@@ -579,7 +579,7 @@ html, body {
 
     #history .content.desktop {
         display: grid;
-        place-items: center;
+        place-items: start; /* I don't know either. -DRR */
     }
 
     #instructions .content.desktop {
@@ -654,6 +654,7 @@ html, body {
 	    grid-template-columns: 1fr 1fr;
 	    grid-template-rows: 1fr 1fr;
 	    grid-template-areas: "history-header history-header" "history-picture history-text";
+	    margin: 0 auto;
 	    max-width: 65%;
 	    max-height: 65%;
     }
