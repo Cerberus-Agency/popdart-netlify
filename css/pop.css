@@ -384,6 +384,9 @@ html, body {
     margin: 5px auto 10px;
 }
 
+#inspiration-mobile-slider { outline: 3px dashed yellowgreen; }
+#inspiration-desktop-slider { outline: 3px dashed orange; }
+
 /******* CONTACT *******/
 
 #contact {
@@ -588,7 +591,7 @@ html, body {
         place-items: center;
     }
 
-    #inspiration .content { /* no diffeerence between desktop and mobile on this one -DRR */
+    #inspiration .content { 
         height: calc(100vh - 320px);
         display: grid;
         place-items: center;
