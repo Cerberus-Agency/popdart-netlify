@@ -729,6 +729,10 @@ html, body {
         outline: 1px dashed red;
     }
 
+	.section {
+	    padding-top: 180px;
+	}
+
     #history {
         background: url(../images/history_400.png) 0 15px repeat-x;
     }
