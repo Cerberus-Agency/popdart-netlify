@@ -20,7 +20,7 @@ body {
     .forbidding-overlay {
         background-color: rgba(0,0,0,.75);
         display: grid;
-            place-items: center;
+        place-items: center;
         position: absolute;
         height: 100vw;
         width: 100vw;
