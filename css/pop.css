@@ -602,13 +602,13 @@ html, body {
     }
 
     .packaging { 
-        flex-basis: 60%;
+        flex-basis: 55%;
         margin: 0;
         width: auto; 
     }
 
     .example-house {
-        flex-basis: 30%;
+        flex-basis: 45%;
     }
 
     .intro-introduction {
