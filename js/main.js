@@ -142,7 +142,34 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $('#inspiration-slider').slick({
+  $('#inspiration-mobile-slider').slick({
+    infinite: true,
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    arrows: true,
+    autoplay: false,
+    variableWidth: true,
+    responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    ]
+  });
+});
+
+$(document).ready(function(){
+  $('#inspiration-desktop-slider').slick({
     infinite: true,
     slidesToShow: 5,
     slidesToScroll: 5,
@@ -158,17 +185,10 @@ $(document).ready(function(){
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 768,
       settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToShow: 3,
+        slidesToScroll: 3
       }
     }
     ]
