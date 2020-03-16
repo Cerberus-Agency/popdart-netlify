@@ -31,16 +31,6 @@
     width: 275px;
 }
 
-/*@media (min-width: 600px) {
-    #instructions-slider.slick-slider {
-       width: 540px;
-    }
-
-    #inspiration-slider.slick-slider {
-       min-width: 600px;
-    }
-}*/
-
 @media (min-width: 800px) {
     #inspiration-slider.slick-slider {
         width: 100%;
