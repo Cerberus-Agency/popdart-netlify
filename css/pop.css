@@ -739,6 +739,7 @@ html, body {
 
     #max-width-container {
         width: auto;
+        max-width: auto;
     }
 
     #history .content {
@@ -777,6 +778,10 @@ and (orientation:portrait) {
         text-decoration: none;
         transition: text-decoration 0.5s ease;
     }   
+
+    #history, #instructions, #inspiration, #content {
+        background-size: 50%;
+    }
 
     #history .content {
         height: calc(100vh - 175px);
