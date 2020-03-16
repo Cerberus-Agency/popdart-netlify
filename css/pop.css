@@ -794,7 +794,7 @@ and (orientation:portrait) {
     }
 
     .menu-primary-container { 
-        display: none;
+        /*display: none;*/
     }
 
     #primary-menu li a {
