@@ -725,11 +725,15 @@ html, body {
 
     /******* TABLET STYLES *******/
 
-    * {
+  /*  * {
         outline: 1px dashed red;
-    }
+    }*/
 
 	.section {
+	    padding-top: 180px;
+	}
+
+	.section#contact {
 	    padding-top: 180px;
 	}
 
@@ -760,6 +764,10 @@ html, body {
 
     #history .content {
         height: calc(100vh - 175px);
+    }
+
+    .history-picture img {
+        max-width: 100%;
     }
 
     #instructions .content {
