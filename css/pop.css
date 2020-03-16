@@ -564,7 +564,7 @@ html, body {
         background: url(../images/contact_400.png) -52px top repeat-x;
     }
 
-    #intro .content.mobile, #history .content.mobile, #instructions .content.mobile #inspiration .content.mobile, a.mobile,  {
+    #intro .content.mobile, #history .content.mobile, #instructions .content.mobile, #inspiration .content.mobile, a.mobile {
         display: none;
     }
 
