@@ -677,6 +677,7 @@ html, body {
 	    grid-template-columns: .3fr .3fr 1fr;
 	    grid-template-rows: 1fr;
 	    grid-template-areas: "instruction-number instruction-image instruction-text";
+	    grid-column-gap: 1em;
     }
 
     .instruction-image { grid-area: instruction-image; }
