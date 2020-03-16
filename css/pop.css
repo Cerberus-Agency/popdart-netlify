@@ -583,21 +583,18 @@ html, body {
     }
 
     #instructions .content.desktop {
-        background: #99cc66;
         height: calc(100vh - 300px);
         display: grid;
         place-items: center;
     }
 
     #inspiration .content { /* no diffeerence between desktop and mobile on this one -DRR */
-        background: #6699cc;
         height: calc(100vh - 320px);
         display: grid;
         place-items: center;
     }
 
     #contact .content.desktop {
-        background: white;
         height: calc(100vh - 365px);
         display: grid;
         place-items: center;
@@ -654,10 +651,12 @@ html, body {
     }
 
     #history .history-container{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: "history-header history-header" "history-picture history-text";
+	    display: grid;
+	    grid-template-columns: .4fr .6fr;
+	    grid-template-rows: 1fr 1fr;
+	    grid-template-areas: "history-header history-header" "history-picture history-text";
+	    max-width: 68%;
+	    max-height: 65%;
     }
 
     .history-header { grid-area: history-header; }
