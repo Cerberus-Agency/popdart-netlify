@@ -713,7 +713,7 @@ html, body {
     }
 
     #contact #retailers {
-        display: none;
+        display: block;
     }
 
 }
