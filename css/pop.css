@@ -447,7 +447,7 @@ html, body {
   }
   100% {
     transform: translateY(0%);
-    top: 30px;
+    top: 30;
   }
 }
 
@@ -458,7 +458,7 @@ html, body {
 @keyframes slideBottom{
   0% {
     transform: translateY(0%);
-    top: 30px;
+    top: 0;
   }
   100% {
     transform: translateY(100%);
@@ -589,7 +589,7 @@ html, body {
         place-items: center;
     }
 
-    #inspiration .content { /no diffeerence between desktop and mobile on this one -DRR */
+    #inspiration .content { /* no diffeerence between desktop and mobile on this one -DRR */
         background: #6699cc;
         height: calc(100vh - 320px);
         display: grid;
