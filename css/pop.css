@@ -243,7 +243,7 @@ html, body {
     font-size: .8em;
     grid-template-columns: .45fr .55fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "house-picture packaging-picture" "intro-introduction intro-introduction";
+    grid-template-areas: "house-picture packaging-picture" "house-picture intro-introduction";
     grid-row-gap: 10px;
     line-height: 1.3;
 }
