@@ -447,7 +447,7 @@ html, body {
   }
   100% {
     transform: translateY(0%);
-    top: 30;
+    top: 10px;
   }
 }
 
@@ -458,7 +458,7 @@ html, body {
 @keyframes slideBottom{
   0% {
     transform: translateY(0%);
-    top: 0;
+    top: 10px;
   }
   100% {
     transform: translateY(100%);
@@ -624,7 +624,6 @@ html, body {
     .packaging-picture { grid-area: packaging-picture; }
 
     .intro-introduction { grid-area: intro-introduction; }
-
 
     .example-house img {
         width: 80%;
