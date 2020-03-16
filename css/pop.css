@@ -606,7 +606,7 @@ html, body {
         display: grid;
         font-size: 1.2em;
         grid-template-columns: .55fr .45fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: .55fr .45fr;
         grid-template-areas:
             "house-picture packaging-picture" "house-picture intro-introduction";
         grid-row-gap: 10px;
@@ -621,11 +621,11 @@ html, body {
 
 
     .example-house img {
-        width: 80%;
+        width: 60%;
     } 
 
     .packaging img {
-        width: 60%;
+        width: 80%;
     }
 
 /****** HISTORY DESKTOP *******/
