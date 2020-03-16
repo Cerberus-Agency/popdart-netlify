@@ -218,7 +218,7 @@ html, body {
 
 #intro {
     background: #cc3366;
-    margin-top: 60px;
+    margin-top: 50px;
     overflow: hidden;
     padding-top: 0;
     position: fixed;
@@ -363,10 +363,6 @@ html, body {
 .ingredients h3 {
     color: #cc3366;
 }
-
-/*.ingredients figure {
-    margin-top: 0;
-}*/
 
 /******* INSPIRATION *******/
 
@@ -607,7 +603,7 @@ html, body {
         display: grid;
         font-size: 1.2em;
         grid-template-columns: .55fr .45fr;
-        grid-template-rows: .55fr .45fr;
+        grid-template-rows: 1fr .45fr;
         grid-template-areas:
             "house-picture packaging-picture" "house-picture intro-introduction";
         line-height: 1.5;
