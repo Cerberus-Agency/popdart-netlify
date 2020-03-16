@@ -710,9 +710,13 @@ html, body {
 
 }
 
-/******* TABLET STYLES *******/
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    /******* TABLET STYLES *******/
 
     #history {
         background: url(../images/history_400.png) 0 15px repeat-x;
@@ -730,41 +734,35 @@ html, body {
         background: url(../images/contact_400.png) -26px 15px repeat-x;
     }
 
-
-    /******* CONTENT ANIMATIONS *******/
-
-    @keyframes slideTop{
-      0% {
-        transform: translateY(100%);
-        top: 100%;
-      }
-      100% {
-        transform: translateY(0%);
-        top: 40px;
-      }
+    #history, #instructions, #inspiration, #content {
+        background-size: 50%;
     }
 
-    .slideToTop {
-        animation: slideTop 1s ease forwards;
+    #max-width-container {
+        width: auto;
     }
 
-    @keyframes slideBottom{
-      0% {
-        transform: translateY(0%);
-        top: 40px;
-      }
-      100% {
-        transform: translateY(100%);
-        top: 100%;
-      }
+    #history .content {
+        height: calc(100vh - 175px);
     }
 
-    .slideToBottom {
-        animation: slideBottom 1s ease forwards;
+    #instructions .content {
+        height: calc(100vh - 180px);
+    }
+
+    #inspiration .content {
+        height: calc(100vh - 185px);
+    }
+
+    #contact .content {
+        height: calc(100vh - 200px);
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation:portrait) {
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (orientation:portrait) {
   /* For portrait layouts only */
     
     body .hamburger {
