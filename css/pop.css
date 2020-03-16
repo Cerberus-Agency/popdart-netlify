@@ -543,22 +543,18 @@ html, body {
 
     #history {
         background: url(../images/history_400.png) left top repeat-x;
-        z-index: 20;
     }
 
     #instructions {
         background: url(../images/instructions_400.png) -52px top repeat-x;
-        z-index: 20;
     }
 
     #inspiration {
         background: url(../images/inspiration_400.png) left top repeat-x;
-        z-index: 30;
     }
 
     #contact {
         background: url(../images/contact_400.png) -52px top repeat-x;
-        z-index: 40;
     }
 
     #intro .content.mobile, .content.mobile, a.mobile, #instructions .mobile {
@@ -713,10 +709,13 @@ html, body {
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1) {
+  and (orientation: landscape) {
 
     /******* TABLET STYLES *******/
+
+    * {
+        outline: 1px dashed red;
+    }
 
     #history {
         background: url(../images/history_400.png) 0 15px repeat-x;
