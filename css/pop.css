@@ -28,6 +28,10 @@ body {
         left: 0;
         z-index: 100;
     }
+
+    .forbidding-overlay p {
+        background: white;
+    }
 }
 
 .flex, .flex-mobile {
@@ -214,6 +218,7 @@ html, body {
 #intro {
     background: #cc3366;
     margin-top: 60px;
+    overflow: hidden;
     padding-top: 0;
     position: fixed;
     transform: translateY(0);
