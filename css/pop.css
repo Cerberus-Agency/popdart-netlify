@@ -207,12 +207,13 @@ html, body {
     padding-top: 165px;
 }
 
-.content {
+/*.content {
     height: calc(100vh - 130px);
     display: grid;
     place-items: center;
     width: 100vw;
-}
+}*/
+/* this is way too powerful -DRR */
 
 /******* INTRO *******/
 
