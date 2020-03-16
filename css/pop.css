@@ -671,24 +671,27 @@ html, body {
 
 /****** INSTRUCTIONS DESKTOP *******/
 
-    .instruction .flex {
-        font-size: 14px;
+    .instruction {
         font-weight: 900;
         line-height: 1.5;
-        align-items: center;
-        justify-content: center;
+	    grid-template-columns: .3fr .3fr 1fr;
+	    grid-template-rows: 1fr;
+	    grid-template-areas: "instruction-number instruction-image instruction-text";
     }
+
+    .instruction-image { grid-area: instruction-image; }
+
+    .instruction-text { grid-area: instruction-text; }
+
+    .instruction-number { grid-area: instruction-number; }
 
     .instruction div {
         padding: .25em;
-    }
-
-    .instruction-image {
-        flex-basis: 40%;
+        display: grid;
     }
 
     .instruction-text {
-        flex-basis: 45%;
+        font-size: 1.4em;
     }
 
     .ingredients {
