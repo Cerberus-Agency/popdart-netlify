@@ -251,7 +251,7 @@ html, body {
 
 .big-picture { grid-area: big-picture; }
 
-.littlepicture { grid-area: little-picture; }
+.little-picture { grid-area: little-picture; }
 
 .intro-introduction { grid-area: intro-introduction; }
 
@@ -837,10 +837,6 @@ and (orientation:portrait) {
 
     #contact .content {
         height: calc(100vh - 200px);
-    }
-
-    .contact-forms-container {
-         height: 500px;
     }
 
     .wpforms-title {
