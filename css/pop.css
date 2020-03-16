@@ -615,7 +615,11 @@ html, body {
         flex-basis: 70%;
     }
 
-    .example-house img, .packaging img {
+    .example-house img {
+        width: 90%;
+    } 
+
+    .packaging img {
         width: 100%;
     }
 
