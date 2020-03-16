@@ -572,12 +572,6 @@ html, body {
         display: block;
     }
 
-    .content {
-        height: calc(100vh - 275px);
-        display: grid;
-        place-items: center;
-    }
-
     #instructions .content {
         background: #99cc66;
         height: calc(100vh - 300px);
