@@ -572,21 +572,26 @@ html, body {
         display: block;
     }
 
-    #instructions .content {
+    #intro .content {
+        display: grid;
+        place-items: center;
+    }
+
+    #instructions .content.desktop {
         background: #99cc66;
         height: calc(100vh - 300px);
         display: grid;
         place-items: center;
     }
 
-    #inspiration .content {
+    #inspiration .content.desktop {
         background: #6699cc;
         height: calc(100vh - 320px);
-                display: grid;
+        display: grid;
         place-items: center;
     }
 
-    #contact .content {
+    #contact .content.desktop {
         background: white;
         height: calc(100vh - 365px);
         display: grid;
@@ -595,7 +600,7 @@ html, body {
 
 /****** INTRO DESKTOP *******/
 
-    #intro .content {
+    #intro .content.desktop {
         background-image: url(../uploads/decoration-blue-quadrilateral.svg);
         background-position: left 0% bottom 30% !important;
         background-repeat: no-repeat;
