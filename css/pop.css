@@ -609,7 +609,6 @@ html, body {
         grid-template-rows: .55fr .45fr;
         grid-template-areas:
             "house-picture packaging-picture" "house-picture intro-introduction";
-        grid-row-gap: 10px;
         line-height: 1.5;
     }
 
