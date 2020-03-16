@@ -615,6 +615,10 @@ html, body {
         flex-basis: 70%;
     }
 
+    .example-house img, .packaging img {
+        width: 100%;
+    }
+
 /****** HISTORY DESKTOP *******/
 
     #history h2 {
