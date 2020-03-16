@@ -665,6 +665,10 @@ html, body {
 
     .history-text { grid-area: history-text; }
 
+    #history p.history-introduction {
+    	font-size: 1.2em;
+    }
+
 
 /****** INSTRUCTIONS DESKTOP *******/
 
