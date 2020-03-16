@@ -577,6 +577,11 @@ html, body {
         place-items: center;
     }
 
+    #history .content.desktop {
+        display: grid;
+        place-items: center;
+    }
+
     #instructions .content.desktop {
         background: #99cc66;
         height: calc(100vh - 300px);
@@ -648,7 +653,7 @@ html, body {
         margin-right: auto;
     }
 
-    #history .content.desktop {
+    #history .history-container{
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
