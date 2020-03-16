@@ -314,7 +314,7 @@ html, body {
 
 #instructions .instructions-header {
     text-align: center;
-    width: 75%;
+    width: 50%;
     margin: 5px auto 10px;
 }
 
@@ -375,6 +375,12 @@ html, body {
 #inspiration .content {
     background: #6699cc;
     height: calc(100vh - 144px);
+}
+
+#inspiration .inspiration-header {
+    text-align: center;
+    width: 50%;
+    margin: 5px auto 10px;
 }
 
 /******* CONTACT *******/
