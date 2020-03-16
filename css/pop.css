@@ -256,6 +256,7 @@ html, body {
 
 .example-house {
     margin: 0 .5em;
+    text-align: center;
 }
 
 .intro-introduction p {
@@ -620,7 +621,7 @@ html, body {
 
 
     .example-house img {
-        width: 60%;
+        width: 80%;
     } 
 
     .packaging img {
