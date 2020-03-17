@@ -778,12 +778,16 @@ html, body {
         height: calc(100vh - 175px);
     }
 
+    #history .history-container {
+        max-width: 95%;
+    }
+
     .history-picture img {
         max-width: 100%;
     }
 
     #instructions .content {
-
+        background: #99cc66;
         height: calc(100vh - 90px);
     }
 
