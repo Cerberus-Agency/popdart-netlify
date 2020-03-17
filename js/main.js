@@ -178,7 +178,7 @@ $(document).ready(function(){
     variableWidth: true,
     responsive: [
 	{
-      breakpoint: 1100,
+      breakpoint: 1600,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3
