@@ -771,8 +771,7 @@ html, body {
     }
 
     #max-width-container {
-        width: auto;
-        max-width: auto;
+        max-width: 900px;
     }
 
     #history .content {
@@ -784,7 +783,8 @@ html, body {
     }
 
     #instructions .content {
-        height: calc(100vh - 180px);
+
+        height: calc(100vh - 90px);
     }
 
     #inspiration .content {
