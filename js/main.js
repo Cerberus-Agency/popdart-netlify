@@ -176,7 +176,7 @@ $(document).ready(function(){
     arrows: true,
     autoplay: false,
     variableWidth: true,
- //    responsive: [
+    responsive: [
 	// {
  //      breakpoint: 1024,
  //      settings: {
@@ -184,14 +184,14 @@ $(document).ready(function(){
  //        slidesToScroll: 4
  //      }
  //    },
- //    {
- //      breakpoint: 768,
- //      settings: {
- //        slidesToShow: 3,
- //        slidesToScroll: 3
- //      }
- //    }
- //    ]
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3
+      }
+    }
+    ]
   });
 });
 
