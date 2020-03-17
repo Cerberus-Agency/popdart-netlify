@@ -171,21 +171,21 @@ $(document).ready(function(){
 $(document).ready(function(){
   $('#inspiration-desktop-slider').slick({
     infinite: true,
-    slidesToShow: 5,
-    slidesToScroll: 5,
+    slidesToShow: 4,
+    slidesToScroll: 4,
     arrows: true,
     autoplay: false,
     variableWidth: true,
     responsive: [
 	{
-      breakpoint: 1600,
+      breakpoint: 1200,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3
       }
     },
     {
-      breakpoint: 768,
+      breakpoint: 700,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3
