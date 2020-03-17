@@ -450,7 +450,7 @@ html, body {
   }
   100% {
     transform: translateY(0%);
-    top: 10px;
+    top: 20px;
   }
 }
 
@@ -461,7 +461,7 @@ html, body {
 @keyframes slideBottom{
   0% {
     transform: translateY(0%);
-    top: 10px;
+    top: 20px;
   }
   100% {
     transform: translateY(100%);
