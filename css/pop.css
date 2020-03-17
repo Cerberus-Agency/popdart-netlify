@@ -586,18 +586,21 @@ html, body {
     }
 
     #instructions .content.desktop {
+        background-color: #99cc66;
         height: calc(100vh - 300px);
         display: grid;
         place-items: center;
     }
 
     #inspiration .content { 
+        background-color: #6699cc;
         height: calc(100vh - 320px);
         display: grid;
         place-items: center;
     }
 
     #contact .content.desktop {
+        background-color: white;
         height: calc(100vh - 365px);
         display: grid;
         place-items: center;
