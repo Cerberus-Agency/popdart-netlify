@@ -581,6 +581,8 @@ html, body {
     }
 
     #history .content.desktop {
+    	background-color: #99cc66;
+        height: calc(100vh - 300px);
         display: grid;
         place-items: start; /* I don't know either. -DRR */
     }
