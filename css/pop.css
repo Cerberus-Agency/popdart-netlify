@@ -655,11 +655,11 @@ html, body {
     #history .history-container{
 	    display: grid;
 	    grid-template-columns: 1fr 1fr;
-	    grid-template-rows: 1fr 1fr;
+	    grid-template-rows: 2fr 1fr;
 	    grid-template-areas: "history-header history-header" "history-picture history-text";
 	    margin: 0 auto;
-	    max-width: 65%;
-	    max-height: 65%;
+/*	    max-width: 65%;
+	    max-height: 65%;*/
     }
 
     .history-header { grid-area: history-header; }
