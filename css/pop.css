@@ -584,7 +584,7 @@ html, body {
     	background-color: ##ffcc33;
         height: calc(100vh - 280px);
         display: grid;
-        place-items: start; /* I don't know either. -DRR */
+        place-items: center;
     }
 
     #instructions .content.desktop {
@@ -659,12 +659,11 @@ html, body {
 
     #history .history-container{
 	    display: grid;
-	    grid-template-columns: 1fr 1fr;
-	    grid-template-rows: 100px 500px;
+	    grid-template-columns: .7fr .9fr;
+	    grid-template-rows: 100px 1fr;
 	    grid-template-areas: "history-header history-header" "history-picture history-text";
 	    margin: 0 auto;
-/*	    max-width: 65%;
-	    max-height: 65%;*/
+	    max-width: 1600px;
     }
 
     .history-header { grid-area: history-header; }
