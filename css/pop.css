@@ -660,7 +660,7 @@ html, body {
     #history .history-container{
 	    display: grid;
 	    grid-template-columns: 1fr 1fr;
-	    grid-template-rows: 500px 500px;
+	    grid-template-rows: 100px 500px;
 	    grid-template-areas: "history-header history-header" "history-picture history-text";
 	    margin: 0 auto;
 /*	    max-width: 65%;
