@@ -384,8 +384,8 @@ html, body {
     margin: 5px auto 10px;
 }
 
-#inspiration-mobile-slider { outline: 3px dashed yellowgreen; }
-#inspiration-desktop-slider { outline: 3px dashed orange; }
+#inspiration-mobile-slider {  }
+#inspiration-desktop-slider {  }
 
 /******* CONTACT *******/
 
@@ -450,7 +450,7 @@ html, body {
   }
   100% {
     transform: translateY(0%);
-    top: 10px;
+    top: 20px;
   }
 }
 
@@ -461,7 +461,7 @@ html, body {
 @keyframes slideBottom{
   0% {
     transform: translateY(0%);
-    top: 10px;
+    top: 20px;
   }
   100% {
     transform: translateY(100%);
@@ -586,18 +586,21 @@ html, body {
     }
 
     #instructions .content.desktop {
+        background-color: #99cc66;
         height: calc(100vh - 300px);
         display: grid;
         place-items: center;
     }
 
     #inspiration .content { 
+        background-color: #6699cc;
         height: calc(100vh - 320px);
         display: grid;
         place-items: center;
     }
 
     #contact .content.desktop {
+        background-color: white;
         height: calc(100vh - 365px);
         display: grid;
         place-items: center;
@@ -666,6 +669,10 @@ html, body {
 
     .history-picture { grid-area: history-picture; }
 
+    .history-picture img {
+        max-width: 100%;
+    }
+
     .history-text { grid-area: history-text; }
 
     #history p.history-introduction {
@@ -675,7 +682,7 @@ html, body {
 
 /****** INSTRUCTIONS DESKTOP *******/
 
-    .instruction {
+    .instruction-slide-content {
         font-weight: 900;
         line-height: 1.5;
 	    grid-template-columns: .3fr .3fr 1fr;
@@ -726,7 +733,6 @@ html, body {
     #contact #retailers {
         display: block;
     }
-
 }
 
 @media only screen 
@@ -769,12 +775,15 @@ html, body {
     }
 
     #max-width-container {
-        width: auto;
-        max-width: auto;
+        max-width: 900px;
     }
 
     #history .content {
         height: calc(100vh - 175px);
+    }
+
+    #history .history-container {
+        max-width: 95%;
     }
 
     .history-picture img {
@@ -782,7 +791,8 @@ html, body {
     }
 
     #instructions .content {
-        height: calc(100vh - 180px);
+        background: #99cc66;
+        height: calc(100vh - 90px);
     }
 
     #inspiration .content {
