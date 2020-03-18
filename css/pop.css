@@ -581,8 +581,8 @@ html, body {
     }
 
     #history .content.desktop {
-    	background-color: #99cc66;
-        height: calc(100vh - 300px);
+    	background-color: ##ffcc33;
+        height: calc(100vh - 280px);
         display: grid;
         place-items: start; /* I don't know either. -DRR */
     }
@@ -660,7 +660,7 @@ html, body {
     #history .history-container{
 	    display: grid;
 	    grid-template-columns: 1fr 1fr;
-	    grid-template-rows: 2fr 1fr;
+	    grid-template-rows: 500px 500px;
 	    grid-template-areas: "history-header history-header" "history-picture history-text";
 	    margin: 0 auto;
 /*	    max-width: 65%;
