@@ -1,5 +1,4 @@
-
-css/.DS_Store
-.DS_Store
-uploads/.DS_Store
-.DS_Store
+node_modules
+pages/page-css-animation.php
+pages/index.html
+support_files
