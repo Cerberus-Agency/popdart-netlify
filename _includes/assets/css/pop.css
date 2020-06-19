@@ -220,7 +220,7 @@ html, body {
 #intro {
     background: #cc3366;
     margin-top: 50px;
-    overflow: hidden;
+    overflow:hidden ;
     padding-top: 0;
     position: fixed;
     transform: translateY(0);
