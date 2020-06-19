@@ -1,0 +1,921 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Zilla Slab", sans-serif;
+    margin: 0;
+}
+
+/******* MOBILE FIRST (AND UNIVERSAL) *******/
+
+
+/******* UTILITY CLASSES *******/
+
+@media only screen and (max-width: 767px) and (orientation:landscape) {
+    .forbidding-overlay {
+        background-color: rgba(0,0,0,.75);
+        display: grid;
+        place-items: center;
+        position: absolute;
+        height: 100vw;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+
+    .forbidding-overlay p {
+        background: white;
+        padding: .5em 1em;
+    }
+}
+
+.flex, .flex-mobile {
+    display: flex;
+}
+
+.flex-wrap-mobile {
+    flex-wrap: wrap;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.desktop, a.desktop {
+    display: none;
+}
+
+.copyright {
+    font-size: 0.65em;
+    text-align: center;
+}
+
+.facebook-link {
+    height: 24px;
+    width: 24px;
+    margin: 1em;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.error-404 {
+    padding: 2em;
+}
+
+/******* NAVIGATION *******/
+
+.main-navigation li {
+    float: none;
+}
+
+.menu-primary-container {
+    display: none;
+}
+
+.menu-primary-container.is-active {
+    display: block;
+    z-index: 100;
+}
+
+#primary-menu {
+    z-index: 100;
+}
+
+#primary-menu li {
+    background: white;
+    display: none;
+    margin: 0;
+    padding: .75em 1em;
+    width: 100vw;
+}
+
+.menu-primary-container.is-active #primary-menu li {
+    background: white;
+    display: block;
+}
+
+#primary-menu li a {
+    color: #cc3366;
+    text-decoration: none;
+}
+
+.site-header {
+    background-color: #cc3366;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    pointer-events: inherit;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 100;
+}
+
+.site-branding {
+    width: 100%;
+    padding-left: 0;
+    position: absolute;
+    z-index: 100;
+}
+
+.site-branding a.mobile {
+    position: absolute;
+    top: 2.35em;
+    left: 130px;
+}
+
+.site-info {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#site-navigation {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    right: 0;
+}
+
+.site-title {
+    margin-left: .5em;
+}
+
+.site-title a {
+    background: url(../images/pdart-logo-white.svg) center center no-repeat;
+    display: inline-block;
+    height: 85px;
+    margin-top: 1em;
+    width: 109px;
+}
+
+ul#menu {
+    position: fixed;
+    z-index: 100;
+}
+
+ul#menu li {
+    list-style: none;
+    float: left;
+    display: inline-block;
+    padding: .5em 1em;
+}
+
+/******* CONTENT *******/
+
+html, body {
+    overflow: hidden;
+    height: 100%;
+}
+
+#container {
+  overflow: hidden;
+}
+
+.max-width-container {
+    max-width: 360px;
+}
+
+.section {
+    height: 100vh;
+    width: 100vw;
+    padding-top: 150px;
+    position: absolute;
+    transform: translateY(100%);
+}
+
+.section#contact {
+    padding-top: 165px;
+}
+
+/*.content {
+    height: calc(100vh - 130px);
+    display: grid;
+    place-items: center;
+    width: 100vw;
+}*/
+/* this is way too powerful -DRR */
+
+/******* INTRO *******/
+
+#intro {
+    background: #cc3366;
+    margin-top: 50px;
+    overflow: hidden;
+    padding-top: 0;
+    position: fixed;
+    transform: translateY(0);
+    z-index: 5;
+}
+
+#intro .content {
+    background-image: url(../uploads/pdart-home-bluebox-mobile.png);
+    background-position: left 0% bottom 30% !important;
+    background-repeat: no-repeat;
+    background-size: 135% 65%;
+    color: white;
+    line-height: 1.2;
+    padding-top: 1em;
+    height: 100vh;
+}
+
+
+#intro .content.mobile .intro-container {
+    display: grid;
+    font-size: .8em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0fr .3fr;
+    grid-template-areas: "big-picture big-picture big-picture" "little-picture intro-introduction intro-introduction";
+    grid-row-gap: 10px;
+    line-height: 1.3;
+}
+
+.big-picture { grid-area: big-picture; }
+
+.little-picture { grid-area: little-picture; }
+
+.intro-introduction { grid-area: intro-introduction; }
+
+.example-house {
+    margin: 0 .5em;
+    text-align: center;
+}
+
+.intro-introduction p {
+    width: 90%;
+}
+
+/******* HISTORY *******/
+
+#history {
+    background: url(../images/history_400.png) 0 20px repeat-x;
+    background-size: 100%;
+    z-index: 10;
+}
+
+#history .content {
+    background: #ffcc33;
+}
+
+#history h2 {
+    color: #cc3366;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    text-align: center;
+    width: 90%;
+}
+
+#history p.history-introduction {
+    color: #cc3366;
+    font-size: .9em;
+    line-height: 1.3;
+     margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.history-title-decoration {
+    max-width: 150px;
+    margin: 4px auto;
+}
+
+/******* INSTRUCTIONS *******/
+
+#instructions {
+    background: url(/images/instructions_400.png) -26px 20px repeat-x;
+    background-size: 100%;
+    z-index: 20;
+}
+
+#instructions .instructions-header {
+    text-align: center;
+    width: 50%;
+    margin: 5px auto 10px;
+}
+
+#instructions .content {
+    background: #99cc66;
+    height: calc(100vh - 130px);
+}
+
+#instructions-mobile-slider {
+    width: 76%;
+}
+
+.instruction-slide-content {
+    background: white;
+    display: grid;
+    grid-template-columns: 0.6fr 1.4fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "instruction-number instruction-image" "instruction-text instruction-text";
+    padding: 1.2em;
+}
+
+.instruction-number { grid-area: instruction-number; }
+
+.instruction-image { grid-area: instruction-image; }
+
+.instruction-text { grid-area: instruction-text; }
+
+.instruction-number {
+    color: lightgray;
+    font-size: 7em;
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+}
+
+.instruction-text {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.ingredients {
+    display: none;
+    text-align: center;
+}
+
+.ingredients h3 {
+    color: #cc3366;
+}
+
+/******* INSPIRATION *******/
+
+#inspiration {
+    background: url(../images/inspiration_400.png) 0 20px repeat-x;
+    background-size: 100%;
+    z-index: 30;
+}
+
+#inspiration .content {
+    background: #6699cc;
+    height: calc(100vh - 144px);
+}
+
+#inspiration .inspiration-header {
+    text-align: center;
+    width: 50%;
+    margin: 5px auto 10px;
+}
+
+#inspiration-mobile-slider {  }
+#inspiration-desktop-slider {  }
+
+/******* CONTACT *******/
+
+#contact {
+    background: url(../images/contact_400.png) -26px 20px repeat-x;
+    background-size: 100%;
+    z-index: 40;
+}
+
+#contact .content {
+    background: white;
+    height: calc(100vh - 148px);
+}
+
+.contact-forms-container {
+    position: relative;
+}
+
+.tab-container {
+    height: 1.75em;
+}
+
+.tab {
+    background: #efefef;
+    flex-basis: 50%;
+    padding: .1em .5em;
+    z-index: 1;
+}
+
+.tab.active {
+    background: white;
+    border: 1px solid gray;
+    border-bottom: 1px solid white;
+    z-index: 2;
+}
+
+.tab-content {
+    background: #efefef;
+    padding: 1em;
+    position: absolute;
+    left: 0;
+    top: 2em;
+    z-index: 1;
+}
+
+.tab-content.active {
+    z-index: 2;
+    background: white;
+}
+
+#contact #retailers {
+    display: none;
+}
+
+
+/******* CONTENT ANIMATIONS *******/
+
+@keyframes slideTop{
+  0% {
+    transform: translateY(100%);
+    top: 100%;
+  }
+  100% {
+    transform: translateY(0%);
+    top: 20px;
+  }
+}
+
+.slideToTop {
+    animation: slideTop 1s ease forwards;
+}
+
+@keyframes slideBottom{
+  0% {
+    transform: translateY(0%);
+    top: 20px;
+  }
+  100% {
+    transform: translateY(100%);
+    top: 100%;
+  }
+}
+
+.slideToBottom {
+    animation: slideBottom 1s ease forwards;
+}
+
+
+/******* DESKTOP STYLES *******/
+
+
+@media (min-width: 768px) {
+
+    html, body {
+        overflow: hidden;
+        height: 100%;
+    }
+
+    /******* UTILITY STYLES *******/
+
+
+    .max-width-container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+    }
+
+    /******* NAVIGATION *******/    
+    
+
+    #primary-menu {
+        margin-left: 0;
+    }
+
+    .menu-primary-container.is-active {
+        position: inherit;
+        top: 0;
+    }
+
+    #primary-menu li, .menu-primary-container.is-active #primary-menu li{
+        background: transparent;
+        display: inline-block;
+        margin-right: 2em;
+        width: auto;
+    }
+
+    #primary-menu li a {
+        color: white;
+    }
+
+    .site-branding {
+        padding-left: 0;
+        position: relative;
+        width: auto;
+    }
+
+    .site-header {
+        justify-content: flex-start;
+        padding-left: 1em;
+    }
+
+    #site-navigation {
+        margin-right: 1em;
+        position: relative;
+    }
+
+    .site-title {
+        margin: 0 2em 0 0em;
+    }
+
+
+    /******* CONTENT *******/
+
+    .section {
+        height: 100vh;
+        width: 100vw;
+        padding-top: 325px;
+        position: absolute;
+        transform: translateY(100%);
+    }
+
+    .section#contact {
+        padding-top: 365px;
+    }
+
+    #history {
+        background: url(../images/history_400.png) left top repeat-x;
+    }
+
+    #instructions {
+        background: url(../images/instructions_400.png) -52px top repeat-x;
+    }
+
+    #inspiration {
+        background: url(../images/inspiration_400.png) left top repeat-x;
+    }
+
+    #contact {
+        background: url(../images/contact_400.png) -52px top repeat-x;
+    }
+
+    #intro .content.mobile, #history .content.mobile, #instructions .content.mobile, #inspiration .content.mobile, a.mobile {
+        display: none;
+    }
+
+    a.desktop {
+        display: block;
+    }
+
+    #intro .content {
+        display: grid;
+        place-items: center;
+    }
+
+    #history .content.desktop {
+    	background-color: ##ffcc33;
+        height: calc(100vh - 280px);
+        display: grid;
+        place-items: center;
+    }
+
+    #instructions .content.desktop {
+        background-color: #99cc66;
+        height: calc(100vh - 300px);
+        display: grid;
+        place-items: center;
+    }
+
+    #inspiration .content { 
+        background-color: #6699cc;
+        height: calc(100vh - 320px);
+        display: grid;
+        place-items: center;
+    }
+
+    #contact .content.desktop {
+        background-color: white;
+        height: calc(100vh - 365px);
+        display: grid;
+        place-items: center;
+    }
+
+/****** INTRO DESKTOP *******/
+
+    #intro .content.desktop {
+        background-image: url(../uploads/decoration-blue-quadrilateral.svg);
+        background-position: left 0% bottom 30% !important;
+        background-repeat: no-repeat;
+        background-size: 88%;
+    }
+
+    #intro .content.desktop .intro-container {
+        display: grid;
+        font-size: 1.2em;
+        grid-template-columns: .55fr .45fr;
+        grid-template-rows: 1fr .45fr;
+        grid-template-areas:
+            "house-picture packaging-picture" "house-picture intro-introduction";
+        line-height: 1.5;
+    }
+
+    .house-picture { grid-area: house-picture; }
+
+    .packaging-picture { grid-area: packaging-picture; }
+
+    .intro-introduction { grid-area: intro-introduction; }
+
+    .example-house img {
+        width: 80%;
+    } 
+
+    .packaging img {
+        width: 90%;
+    }
+
+/****** HISTORY DESKTOP *******/
+
+    #history h2 {
+        font-size: 2em;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        width: 48%;
+    }
+
+    .history-title-decoration {
+        max-width: 220px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #history .history-container{
+	    display: grid;
+	    grid-template-columns: .7fr .9fr;
+	    grid-template-rows: 100px 1fr;
+	    grid-template-areas: "history-header history-header" "history-picture history-text";
+	    margin: 0 auto;
+	    max-width: 1600px;
+    }
+
+    .history-header { grid-area: history-header; }
+
+    .history-picture { grid-area: history-picture; }
+
+    .history-picture img {
+        max-width: 100%;
+    }
+
+    .history-text { 
+    	grid-area: history-text; 
+    	display: grid;
+    	place-items: center;
+    }
+
+    #history p.history-introduction {
+    	font-size: 1.2em;
+    	width: 50%;
+    }
+
+
+/****** INSTRUCTIONS DESKTOP *******/
+
+    .instruction-slide-content {
+        font-weight: 900;
+        line-height: 1.5;
+	    grid-template-columns: .3fr .3fr 1fr;
+	    grid-template-rows: 1fr;
+	    grid-template-areas: "instruction-number instruction-image instruction-text";
+	    grid-column-gap: 1em;
+    }
+
+    .instruction-image { grid-area: instruction-image; }
+
+    .instruction-text { grid-area: instruction-text; }
+
+    .instruction-number { grid-area: instruction-number; }
+
+    .instruction div {
+        padding: .25em;
+        display: grid;
+    }
+
+    .instruction-text {
+        font-size: 1.4em;
+    }
+
+    .ingredients {
+        display: block;
+    }
+
+/****** CONTACT DESKTOP *******/
+
+    .tab {
+        display: none;
+    }
+
+    .tab-content {
+        background-color: white;
+        position: inherit;
+    }
+
+    .heading-image {
+        margin-bottom: 1em;
+    }
+
+    .contact-form {
+        flex-basis: 40%;
+        padding: 1em 2em;
+    }
+
+    #contact #retailers {
+        display: block;
+    }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) {
+
+    /******* TABLET STYLES *******/
+
+  /*  * {
+        outline: 1px dashed red;
+    }*/
+
+	.section {
+	    padding-top: 180px;
+	}
+
+	.section#contact {
+	    padding-top: 180px;
+	}
+
+    #history {
+        background: url(../images/history_400.png) 0 15px repeat-x;
+    }
+
+    #instructions {
+        background: url(../images/instructions_400.png) -26px 15px repeat-x;
+    }
+
+    #inspiration {
+        background: url(../images/inspiration_400.png) 0 15px repeat-x;
+    }
+
+    #contact {
+        background: url(../images/contact_400.png) -26px 15px repeat-x;
+    }
+
+    #history, #instructions, #inspiration, #content {
+        background-size: 50%;
+    }
+
+    #max-width-container {
+        max-width: 900px;
+    }
+
+    #history .content {
+        height: calc(100vh - 175px);
+    }
+
+    #history .history-container {
+        max-width: 95%;
+    }
+
+    .history-picture img {
+        max-width: 100%;
+    }
+
+    #instructions .content {
+        background: #99cc66;
+        height: calc(100vh - 90px);
+    }
+
+    #inspiration .content {
+        height: calc(100vh - 185px);
+    }
+
+    #contact .content {
+        height: calc(100vh - 200px);
+    }
+}
+
+@media only screen 
+and (min-device-width: 768px) 
+and (max-device-width: 1024px) 
+and (orientation:portrait) {
+  /* For portrait layouts only */
+    
+    body .hamburger {
+        display: block;
+    }
+
+    .menu-primary-container { 
+        /*display: none;*/
+    }
+
+    #primary-menu li a {
+        color: white;
+        text-decoration: none;
+        transition: text-decoration 0.5s ease;
+    }   
+
+    .section {
+	    padding-top: 120px;
+	}
+
+	.section#contact {
+	    padding-top: 150px;
+	}
+
+    #history, #instructions, #inspiration, #content {
+        background-size: 50%;
+    }
+
+    #history .content {
+        height: calc(100vh - 175px);
+    }
+
+    #instructions .content {
+        height: calc(100vh - 180px);
+    }
+
+    #inspiration .content {
+        height: calc(100vh - 185px);
+    }
+
+    #contact .content {
+        height: calc(100vh - 200px);
+    }
+
+    .wpforms-title {
+        display: block;
+    }
+
+    .logo-container {
+        margin-top: 4em;
+    }
+}
+
+/******* HAMBURGER MENU STYLES *******/
+
+@media only screen and ( max-width:700px ) {
+    
+    .menu-primary-container { 
+        display: none;
+    }
+
+    #site-navigation {
+        text-align: left;
+    }
+}
+
+@media only screen and ( min-width:700px ) {
+    body .hamburger {
+        display: none;
+    }
+
+    .menu-primary-container { 
+        display: block;
+    }
+}
+
+/****** FORMS *******/
+
+input {
+    border: 1px solid #cc3366;
+}
+
+input[type=text], input[type=email] {
+    background-color: #fff;
+    border-radius: 2px;
+    color: #333;
+    display: block;
+    font-family: 'Zilla Slab', sans-serif;
+    font-size: 16px;
+    padding: 6px 10px;
+    height: 38px;
+    width: 100%;
+    line-height: 1.3;
+}
+
+button[type="submit"]{
+    background-color: #cc3366;
+    border-radius: 4px;
+    color: white;
+    font-family: 'Zilla Slab', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
