@@ -11,7 +11,7 @@ eleventyNavigation:
     <div id="page" class="site">
     <header id="header" class="site-header flex align-items-center">
         <div class="site-branding">
-            <p class="site-title"><a href="http://popdart.netlify.com/" rel="home"></a></p>
+            <p class="site-title"><a href="/" rel="home"></a></p>
             <a class="mobile" href="https://facebook.com/NOLAShotgunGingerbreadHouse" target="_blank"><img class="facebook-link" src="/static/images/pdart-fb-logo-white.svg" alt="" /></a>
         </div><!-- .site-branding -->
         <nav id="site-navigation" class="main-navigation">
