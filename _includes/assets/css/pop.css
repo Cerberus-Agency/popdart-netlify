@@ -308,7 +308,7 @@ html, body {
 /******* INSTRUCTIONS *******/
 
 #instructions {
-    background: url(/images/instructions_400.png) -26px 20px repeat-x;
+    background: url(/static/images/instructions_400.png) -26px 20px repeat-x;
     background-size: 100%;
     z-index: 20;
 }
