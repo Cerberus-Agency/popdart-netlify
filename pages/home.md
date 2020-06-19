@@ -20,8 +20,6 @@ eleventyNavigation:
                     <span class="hamburger-inner"></span>
                 </span>
             </button>
-            <!-- <nav id="navigation"> -->
-            <!--navigation goes here-->
             <div class="menu-primary-container">
                 <ul id="primary-menu" class="menu">
                     <li class="link-history menu-item"><a href="#history">History</a></li>
@@ -29,7 +27,7 @@ eleventyNavigation:
                     <li class="link-inspiration menu-item"><a href="#inspiration">Inspiration</a></li>
                     <li class="link-contact menu-item"><a href="#contact">Contact</a></li>
                 </ul>
-            </div> <!-- </nav> -->
+            </div>
         </nav><!-- #site-navigation -->
         <a class="desktop" href="https://facebook.com/NOLAShotgunGingerbreadHouse" target="_blank"><img class="facebook-link" src="/static/images/pdart-fb-logo-white.svg" alt="" /></a>
     </header><!-- #header -->
