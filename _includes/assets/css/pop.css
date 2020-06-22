@@ -183,12 +183,12 @@ ul#menu li {
 /******* CONTENT *******/
 
 html, body {
-    overflow: hidden;
+    /* overflow: hidden; */
     height: 100%;
 }
 
 #container {
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .max-width-container {
@@ -220,7 +220,7 @@ html, body {
 #intro {
     background: #cc3366;
     margin-top: 50px;
-    overflow:hidden ;
+    /* overflow:hidden ; */
     padding-top: 0;
     position: fixed;
     transform: translateY(0);
@@ -480,7 +480,7 @@ html, body {
 @media (min-width: 768px) {
 
     html, body {
-        overflow: hidden;
+        /* overflow: hidden; */
         height: 100%;
     }
 

@@ -334,9 +334,9 @@ eleventyNavigation:
                         </div>
                 </div>
             </section>
-        </div>
+        <!-- </div>
         <div class="forbidding-overlay"><p>Please rotate or expand your screen for better results.</p></div>
-    </div><!-- #content -->
+    </div>#content -->
     <footer id="colophon" class="site-footer">
         <div class="site-info">
             Site designed and built by <a href="https://cerberus.agency">Cerberus</a>. 
