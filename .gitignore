@@ -1,5 +1,8 @@
 
-css/.DS_Store
 .DS_Store
-uploads/.DS_Store
-.DS_Store
+_includes
+_site
+node_modules
+pages
+support_files
+
