@@ -2,7 +2,9 @@ html {
     box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
@@ -16,17 +18,21 @@ body {
 
 /******* UTILITY CLASSES *******/
 
-@media only screen and (max-width: 767px) and (orientation:landscape) {
+@media only screen and (max-width: 1024px) and (orientation:landscape) {
+
     .forbidding-overlay {
-        background-color: rgba(0,0,0,.75);
+        background-color: rgba(0, 0, 0, .75);
         display: grid;
         place-items: center;
         position: absolute;
         height: 100vw;
+        width: fit-content;
+        height: 100%;
         width: 100vw;
         top: 0;
         left: 0;
         z-index: 100;
+        overflow-x: hidden;
     }
 
     .forbidding-overlay p {
@@ -35,7 +41,8 @@ body {
     }
 }
 
-.flex, .flex-mobile {
+.flex,
+.flex-mobile {
     display: flex;
 }
 
@@ -55,7 +62,8 @@ body {
     align-items: center;
 }
 
-.desktop, a.desktop {
+.desktop,
+a.desktop {
     display: none;
 }
 
@@ -72,6 +80,8 @@ body {
 
 .logo-container {
     text-align: center;
+    margin: -15px 0 5px 0;
+    ;
 }
 
 .error-404 {
@@ -182,17 +192,18 @@ ul#menu li {
 
 /******* CONTENT *******/
 
-html, body {
+html,
+body {
     overflow: hidden;
-    height: 100%;
 }
 
 #container {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .max-width-container {
     max-width: 360px;
+    margin: 0 auto;
 }
 
 .section {
@@ -221,21 +232,24 @@ html, body {
     background: #cc3366;
     margin-top: 50px;
     overflow: hidden;
-    padding-top: 0;
+    padding-top: 40px;
     position: fixed;
     transform: translateY(0);
     z-index: 5;
+    height: -webkit-fill-available;
 }
 
 #intro .content {
     background-image: url(../uploads/pdart-home-bluebox-mobile.png);
-    background-position: left 0% bottom 30% !important;
     background-repeat: no-repeat;
-    background-size: 135% 65%;
     color: white;
     line-height: 1.2;
     padding-top: 1em;
     height: 100vh;
+
+
+    background-position: left 0% bottom 50% !important;
+    background-size: 130% 45%
 }
 
 
@@ -244,24 +258,31 @@ html, body {
     font-size: .8em;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0fr .3fr;
-    grid-template-areas: "big-picture big-picture big-picture" "little-picture intro-introduction intro-introduction";
+    grid-template-areas: "big-picture big-picture big-picture""little-picture intro-introduction intro-introduction";
     grid-row-gap: 10px;
     line-height: 1.3;
 }
 
-.big-picture { grid-area: big-picture; }
+.big-picture {
+    grid-area: big-picture;
+}
 
-.little-picture { grid-area: little-picture; }
+.little-picture {
+    grid-area: little-picture;
+}
 
-.intro-introduction { grid-area: intro-introduction; }
+.intro-introduction {
+    grid-area: intro-introduction;
+}
 
 .example-house {
     margin: 0 .5em;
-    text-align: center;
+    /* text-align: center; */
 }
 
+/* margin good for desktop not mobile */
 .intro-introduction p {
-    width: 90%;
+    width: 85%;
 }
 
 /******* HISTORY *******/
@@ -274,6 +295,7 @@ html, body {
 
 #history .content {
     background: #ffcc33;
+    height: inherit;
 }
 
 #history h2 {
@@ -295,9 +317,17 @@ html, body {
     color: #cc3366;
     font-size: .9em;
     line-height: 1.3;
-     margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
     width: 90%;
+    height: 23em;
+    overflow: auto;
+    border: white;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 15px;
+    background-color: rgb(254, 223, 138);
+    padding: 15px;
 }
 
 .history-title-decoration {
@@ -305,10 +335,23 @@ html, body {
     margin: 4px auto;
 }
 
+::-webkit-scrollbar {
+    width: 14px;
+    height: 10px;
+} 
+
+::-webkit-scrollbar-thumb {
+    height: 6px;
+    border: 4px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    -webkit-border-radius: 25px;
+    background-color: white;
+    -webkit-box-shadow: inset -8px -8px 0px rgba(0, 0, 0, 0), inset 8px 8px 0px rgba(0, 0, 0, 0);
+}
 /******* INSTRUCTIONS *******/
 
 #instructions {
-    background: url(/images/instructions_400.png) -26px 20px repeat-x;
+    background: url(../images/instructions_400.png) -26px 20px repeat-x;
     background-size: 100%;
     z-index: 20;
 }
@@ -316,12 +359,12 @@ html, body {
 #instructions .instructions-header {
     text-align: center;
     width: 50%;
-    margin: 5px auto 10px;
+    margin: 28px auto 10px;
 }
 
 #instructions .content {
     background: #99cc66;
-    height: calc(100vh - 130px);
+    height: inherit;
 }
 
 #instructions-mobile-slider {
@@ -333,15 +376,21 @@ html, body {
     display: grid;
     grid-template-columns: 0.6fr 1.4fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "instruction-number instruction-image" "instruction-text instruction-text";
+    grid-template-areas: "instruction-number instruction-image""instruction-text instruction-text";
     padding: 1.2em;
 }
 
-.instruction-number { grid-area: instruction-number; }
+.instruction-number {
+    grid-area: instruction-number;
+}
 
-.instruction-image { grid-area: instruction-image; }
+.instruction-image {
+    grid-area: instruction-image;
+}
 
-.instruction-text { grid-area: instruction-text; }
+.instruction-text {
+    grid-area: instruction-text;
+}
 
 .instruction-number {
     color: lightgray;
@@ -375,17 +424,31 @@ html, body {
 
 #inspiration .content {
     background: #6699cc;
-    height: calc(100vh - 144px);
+    height: inherit;
 }
 
 #inspiration .inspiration-header {
     text-align: center;
     width: 50%;
-    margin: 5px auto 10px;
+    margin: 28px auto 30px;
 }
 
-#inspiration-mobile-slider {  }
-#inspiration-desktop-slider {  }
+#inspiration-mobile-slider {
+    width: 290px
+}
+
+#inspiration-mobile-slider img {
+    width: 275px
+}
+
+#inspiration-desktop-slider {
+    width: 96%;
+}
+
+#inspiration-desktop-slider img {
+    width: 275px;
+}
+
 
 /******* CONTACT *******/
 
@@ -397,7 +460,7 @@ html, body {
 
 #contact .content {
     background: white;
-    height: calc(100vh - 148px);
+    height: inherit;
 }
 
 .contact-forms-container {
@@ -443,30 +506,32 @@ html, body {
 
 /******* CONTENT ANIMATIONS *******/
 
-@keyframes slideTop{
-  0% {
-    transform: translateY(100%);
-    top: 100%;
-  }
-  100% {
-    transform: translateY(0%);
-    top: 20px;
-  }
+@keyframes slideTop {
+    0% {
+        transform: translateY(100%);
+        top: 100%;
+    }
+
+    100% {
+        transform: translateY(0%);
+        top: 20px;
+    }
 }
 
 .slideToTop {
     animation: slideTop 1s ease forwards;
 }
 
-@keyframes slideBottom{
-  0% {
-    transform: translateY(0%);
-    top: 20px;
-  }
-  100% {
-    transform: translateY(100%);
-    top: 100%;
-  }
+@keyframes slideBottom {
+    0% {
+        transform: translateY(0%);
+        top: 20px;
+    }
+
+    100% {
+        transform: translateY(100%);
+        top: 100%;
+    }
 }
 
 .slideToBottom {
@@ -476,10 +541,11 @@ html, body {
 
 /******* DESKTOP STYLES *******/
 
+/* MIN width will change, this is optimal for large screens not small labtops and ipads 1750 and up*/
+@media (min-width: 1500px) {
 
-@media (min-width: 768px) {
-
-    html, body {
+    html,
+    body {
         overflow: hidden;
         height: 100%;
     }
@@ -493,8 +559,8 @@ html, body {
         max-width: 1200px;
     }
 
-    /******* NAVIGATION *******/    
-    
+    /******* NAVIGATION *******/
+
 
     #primary-menu {
         margin-left: 0;
@@ -505,7 +571,8 @@ html, body {
         top: 0;
     }
 
-    #primary-menu li, .menu-primary-container.is-active #primary-menu li{
+    #primary-menu li,
+    .menu-primary-container.is-active #primary-menu li {
         background: transparent;
         display: inline-block;
         margin-right: 2em;
@@ -542,32 +609,40 @@ html, body {
     .section {
         height: 100vh;
         width: 100vw;
-        padding-top: 325px;
+        padding-top: 240px;
         position: absolute;
         transform: translateY(100%);
     }
 
     .section#contact {
-        padding-top: 365px;
+        padding-top: 240px;
     }
 
     #history {
-        background: url(../images/history_400.png) left top repeat-x;
+        background: url(../images/history_400.png) 0px 20px repeat-x;
+        background-size: 30%;
     }
 
     #instructions {
-        background: url(../images/instructions_400.png) -52px top repeat-x;
+        background: url(../images/instructions_400.png) -37px 21px repeat-x;
+        background-size: 30%;
     }
 
     #inspiration {
-        background: url(../images/inspiration_400.png) left top repeat-x;
+        background: url(../images/inspiration_400.png) -3px 28px repeat-x;
+        background-size: 30%;
     }
 
     #contact {
-        background: url(../images/contact_400.png) -52px top repeat-x;
+        background: url(../images/contact_400.png) -42px 25px repeat-x;
+        background-size: 30%;
     }
 
-    #intro .content.mobile, #history .content.mobile, #instructions .content.mobile, #inspiration .content.mobile, a.mobile {
+    #intro .content.mobile,
+    #history .content.mobile,
+    #instructions .content.mobile,
+    #inspiration .content.mobile,
+    a.mobile {
         display: none;
     }
 
@@ -580,23 +655,28 @@ html, body {
         place-items: center;
     }
 
+    .intro-introduction p {
+        width: 85%;
+        margin: -50px 0px 10px -140px;
+    }
+
     #history .content.desktop {
-    	background-color: ##ffcc33;
-        height: calc(100vh - 280px);
+        background-color: #ffcc33;
+        height: calc(100vh - 225px);
         display: grid;
         place-items: center;
     }
 
     #instructions .content.desktop {
         background-color: #99cc66;
-        height: calc(100vh - 300px);
+        height: calc(100vh - 250px);
         display: grid;
         place-items: center;
     }
 
-    #inspiration .content { 
+    #inspiration .content {
         background-color: #6699cc;
-        height: calc(100vh - 320px);
+        height: calc(100vh - 260px);
         display: grid;
         place-items: center;
     }
@@ -608,13 +688,19 @@ html, body {
         place-items: center;
     }
 
-/****** INTRO DESKTOP *******/
+    /****** INTRO DESKTOP *******/
+
+    #intro {
+        padding-top: 0px;
+    }
 
     #intro .content.desktop {
         background-image: url(../uploads/decoration-blue-quadrilateral.svg);
         background-position: left 0% bottom 30% !important;
         background-repeat: no-repeat;
-        background-size: 88%;
+        background-size: 95%;
+        background-position: left 0% bottom 30% !important;
+        background-size: 135% 65%;
     }
 
     #intro .content.desktop .intro-container {
@@ -623,32 +709,39 @@ html, body {
         grid-template-columns: .55fr .45fr;
         grid-template-rows: 1fr .45fr;
         grid-template-areas:
-            "house-picture packaging-picture" "house-picture intro-introduction";
+            "house-picture packaging-picture""house-picture intro-introduction";
         line-height: 1.5;
     }
 
-    .house-picture { grid-area: house-picture; }
-
-    .packaging-picture { grid-area: packaging-picture; }
-
-    .intro-introduction { grid-area: intro-introduction; }
-
-    .example-house img {
-        width: 80%;
-    } 
-
-    .packaging img {
-        width: 90%;
+    .house-picture {
+        grid-area: house-picture;
     }
 
-/****** HISTORY DESKTOP *******/
+    .packaging-picture {
+        grid-area: packaging-picture;
+    }
+
+    .intro-introduction {
+        grid-area: intro-introduction;
+    }
+
+    .example-house img {
+        width:65%;
+        margin: 15px 0px -15px 0px;
+    }
+
+    .packaging img {
+        width: 80%;
+    }
+
+    /****** HISTORY DESKTOP *******/
 
     #history h2 {
         font-size: 2em;
         margin-top: 0;
         margin-bottom: 0;
         padding: 0;
-        width: 48%;
+        width: 38%;
     }
 
     .history-title-decoration {
@@ -657,51 +750,90 @@ html, body {
         margin-right: auto;
     }
 
-    #history .history-container{
-	    display: grid;
-	    grid-template-columns: .7fr .9fr;
-	    grid-template-rows: 100px 1fr;
-	    grid-template-areas: "history-header history-header" "history-picture history-text";
-	    margin: 0 auto;
-	    max-width: 1600px;
+    #history .history-container {
+        display: grid;
+        grid-template-columns: .7fr .9fr;
+        grid-template-rows: 100px 1fr;
+        grid-template-areas: "history-header history-header""history-picture history-text";
+        margin: 0 auto;
+        max-width: 1600px;
     }
 
-    .history-header { grid-area: history-header; }
+    .history-header {
+        grid-area: history-header;
+        margin: -65px 0px 1px 0px;
+    }
 
-    .history-picture { grid-area: history-picture; }
+    .history-picture {
+        grid-area: history-picture;
+    }
 
     .history-picture img {
-        max-width: 100%;
+        max-width: 90%;
+        margin: -131px 0px 23px -155px
     }
 
-    .history-text { 
-    	grid-area: history-text; 
-    	display: grid;
-    	place-items: center;
+    .history-text {
+        grid-area: history-text;
+        display: grid;
+        place-items: center;
     }
 
     #history p.history-introduction {
-    	font-size: 1.2em;
-    	width: 50%;
+        font-size: 1.2em;
+        width: 70%;
+        height: 15em;
+        overflow: auto;
+        margin-bottom: 5em;
+        border: white;
+        border-style: solid;
+        border-width: 8px;
+        padding: 35px;
+        border-radius: 15px;
+        background-color: rgb(254, 223, 138);
     }
 
+        ::-webkit-scrollbar {
+            width: 18px;
+            height: 15px;
+        }
+        ::-webkit-scrollbar-thumb {
+            height: 6px;
+            border: 4px solid rgba(0, 0, 0, 0);
+            background-clip: padding-box;
+            -webkit-border-radius: 25px;
+            background-color: white;
+            -webkit-box-shadow: inset -8px -8px 0px rgba(0, 0, 0, 0), inset 8px 8px 0px rgba(0, 0, 0, 0);
+        }
 
-/****** INSTRUCTIONS DESKTOP *******/
+    /****** INSTRUCTIONS DESKTOP *******/
+
+    #instructions .instructions-header {
+        text-align: center;
+        width: 50%;
+        margin: -25px auto 10px;
+    }
 
     .instruction-slide-content {
         font-weight: 900;
         line-height: 1.5;
-	    grid-template-columns: .3fr .3fr 1fr;
-	    grid-template-rows: 1fr;
-	    grid-template-areas: "instruction-number instruction-image instruction-text";
-	    grid-column-gap: 1em;
+        grid-template-columns: .3fr .3fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "instruction-number instruction-image instruction-text";
+        grid-column-gap: 1em;
     }
 
-    .instruction-image { grid-area: instruction-image; }
+    .instruction-image {
+        grid-area: instruction-image;
+    }
 
-    .instruction-text { grid-area: instruction-text; }
+    .instruction-text {
+        grid-area: instruction-text;
+    }
 
-    .instruction-number { grid-area: instruction-number; }
+    .instruction-number {
+        grid-area: instruction-number;
+    }
 
     .instruction div {
         padding: .25em;
@@ -715,8 +847,14 @@ html, body {
     .ingredients {
         display: block;
     }
+    /******* Inspiration *******/
+    #inspiration .inspiration-header {
+        text-align: center;
+        width: 50%;
+        margin: -29px auto 50px;
+    }
 
-/****** CONTACT DESKTOP *******/
+    /****** CONTACT DESKTOP *******/
 
     .tab {
         display: none;
@@ -730,6 +868,9 @@ html, body {
     .heading-image {
         margin-bottom: 1em;
     }
+    #inspiration .heading-image {
+        margin-top: -7em;
+    }
 
     .contact-form {
         flex-basis: 40%;
@@ -741,24 +882,21 @@ html, body {
     }
 }
 
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: landscape) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
 
     /******* TABLET STYLES *******/
 
-  /*  * {
+    /*  * {
         outline: 1px dashed red;
     }*/
+/*
+    .section {
+        padding-top: 180px;
+    }
 
-	.section {
-	    padding-top: 180px;
-	}
-
-	.section#contact {
-	    padding-top: 180px;
-	}
+    .section#contact {
+        padding-top: 180px;
+    }
 
     #history {
         background: url(../images/history_400.png) 0 15px repeat-x;
@@ -776,7 +914,10 @@ html, body {
         background: url(../images/contact_400.png) -26px 15px repeat-x;
     }
 
-    #history, #instructions, #inspiration, #content {
+    #history,
+    #instructions,
+    #inspiration,
+    #content {
         background-size: 50%;
     }
 
@@ -807,38 +948,56 @@ html, body {
 
     #contact .content {
         height: calc(100vh - 200px);
-    }
+    } */
 }
 
-@media only screen 
-and (min-device-width: 768px) 
-and (max-device-width: 1024px) 
-and (orientation:portrait) {
-  /* For portrait layouts only */
-    
-    body .hamburger {
+@media only screen and (min-device-width: 767px) and (max-device-width: 1024px) and (orientation:portrait) {
+    /* For portrait layouts only */
+
+
+     body .hamburger {
         display: block;
     }
 
-    .menu-primary-container { 
-        /*display: none;*/
+    .menu-primary-container {
+        display: none;
     }
 
     #primary-menu li a {
-        color: white;
+        color:#cc3366;
         text-decoration: none;
         transition: text-decoration 0.5s ease;
-    }   
+    } 
+
+    /******* HOME PAGE ********/
+    /* #intro .content.mobile .intro-container {
+        font-size: 1em;
+    } */
+
+
+    #intro .content.mobile .intro-container {
+        background-image: url(../uploads/decoration-blue-quadrilateral.svg);
+        background-position: left 0% bottom 30% !important;
+        font-size: 1em;
+        background-repeat: no-repeat;
+        background-size: 95%;
+        background-position: left 0% bottom 30% !important;
+        background-size: 135% 65%;
+    }
+
 
     .section {
-	    padding-top: 120px;
-	}
+        padding-top: 120px;
+    }
 
-	.section#contact {
-	    padding-top: 150px;
-	}
+    .section#contact {
+        padding-top: 150px;
+    }
 
-    #history, #instructions, #inspiration, #content {
+    #history,
+    #instructions,
+    #inspiration,
+    #content {
         background-size: 50%;
     }
 
@@ -864,14 +1023,14 @@ and (orientation:portrait) {
 
     .logo-container {
         margin-top: 4em;
-    }
+    } 
 }
 
 /******* HAMBURGER MENU STYLES *******/
 
-@media only screen and ( max-width:700px ) {
-    
-    .menu-primary-container { 
+@media only screen and (max-width:1024px) {
+
+    .menu-primary-container {
         display: none;
     }
 
@@ -880,12 +1039,12 @@ and (orientation:portrait) {
     }
 }
 
-@media only screen and ( min-width:700px ) {
+@media only screen and (min-width:1025px) {
     body .hamburger {
         display: none;
     }
 
-    .menu-primary-container { 
+    .menu-primary-container {
         display: block;
     }
 }
@@ -896,7 +1055,8 @@ input {
     border: 1px solid #cc3366;
 }
 
-input[type=text], input[type=email] {
+input[type=text],
+input[type=email] {
     background-color: #fff;
     border-radius: 2px;
     color: #333;
@@ -909,13 +1069,13 @@ input[type=text], input[type=email] {
     line-height: 1.3;
 }
 
-button[type="submit"]{
+button[type="submit"] {
     background-color: #cc3366;
     border-radius: 4px;
     color: white;
     font-family: 'Zilla Slab', sans-serif;
     font-size: 1em;
     font-weight: 700;
-    padding: 10px 15px;
+    padding: 5px 8px;
     text-transform: uppercase;
 }
