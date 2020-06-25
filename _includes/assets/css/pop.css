@@ -161,7 +161,7 @@ body {
 }
 
 .site-title a {
-    background: url(/static/images/pdart-logo-white.svg) center center no-repeat;
+    background: url(../../../static/images/pdart-logo-white.svg) center center no-repeat;
     display: inline-block;
     height: 85px;
     margin-top: 1em;
@@ -228,7 +228,7 @@ html, body {
 }
 
 #intro .content {
-    background-image: url(/static/uploads/pdart-home-bluebox-mobile.png);
+    background-image: url(../../../static/uploads/pdart-home-bluebox-mobile.png);
     background-position: left 0% bottom 30% !important;
     background-repeat: no-repeat;
     background-size: 135% 65%;
@@ -267,7 +267,7 @@ html, body {
 /******* HISTORY *******/
 
 #history {
-    background: url(/static/images/history_400.png) 0 20px repeat-x;
+    background: url(../../../static/images/history_400.png) 0 20px repeat-x;
     background-size: 100%;
     z-index: 10;
 }
@@ -308,7 +308,7 @@ html, body {
 /******* INSTRUCTIONS *******/
 
 #instructions {
-    background: url(/static/images/instructions_400.png) -26px 20px repeat-x;
+    background: url(../../../static/images/instructions_400.png) -26px 20px repeat-x;
     background-size: 100%;
     z-index: 20;
 }
@@ -368,7 +368,7 @@ html, body {
 /******* INSPIRATION *******/
 
 #inspiration {
-    background: url(/static/images/inspiration_400.png) 0 20px repeat-x;
+    background: url(../../../static/images/inspiration_400.png) 0 20px repeat-x;
     background-size: 100%;
     z-index: 30;
 }
@@ -390,7 +390,7 @@ html, body {
 /******* CONTACT *******/
 
 #contact {
-    background: url(/static/images/contact_400.png) -26px 20px repeat-x;
+    background: url(../../../static/images/contact_400.png) -26px 20px repeat-x;
     background-size: 100%;
     z-index: 40;
 }
@@ -552,19 +552,19 @@ html, body {
     }
 
     #history {
-        background: url(/static/images/history_400.png) left top repeat-x;
+        background: url(../../../static/images/history_400.png) left top repeat-x;
     }
 
     #instructions {
-        background: url(/static/images/instructions_400.png) -52px top repeat-x;
+        background: url(../../../static/images/instructions_400.png) -52px top repeat-x;
     }
 
     #inspiration {
-        background: url(/static/images/inspiration_400.png) left top repeat-x;
+        background: url(../../../static/images/inspiration_400.png) left top repeat-x;
     }
 
     #contact {
-        background: url(/static/images/contact_400.png) -52px top repeat-x;
+        background: url(../../../static/images/contact_400.png) -52px top repeat-x;
     }
 
     #intro .content.mobile, #history .content.mobile, #instructions .content.mobile, #inspiration .content.mobile, a.mobile {
@@ -611,7 +611,7 @@ html, body {
 /****** INTRO DESKTOP *******/
 
     #intro .content.desktop {
-        background-image: url(/static/uploads/decoration-blue-quadrilateral.svg);
+        background-image: url(../../../static/uploads/decoration-blue-quadrilateral.svg);
         background-position: left 0% bottom 30% !important;
         background-repeat: no-repeat;
         background-size: 88%;
@@ -761,19 +761,19 @@ html, body {
 	}
 
     #history {
-        background: url(/static/images/history_400.png) 0 15px repeat-x;
+        background: url(../../../static/images/history_400.png) 0 15px repeat-x;
     }
 
     #instructions {
-        background: url(/static/images/instructions_400.png) -26px 15px repeat-x;
+        background: url(../../../static/images/instructions_400.png) -26px 15px repeat-x;
     }
 
     #inspiration {
-        background: url(/static/images/inspiration_400.png) 0 15px repeat-x;
+        background: url(../../../static/images/inspiration_400.png) 0 15px repeat-x;
     }
 
     #contact {
-        background: url(/static/images/contact_400.png) -26px 15px repeat-x;
+        background: url(../../../static/images/contact_400.png) -26px 15px repeat-x;
     }
 
     #history, #instructions, #inspiration, #content {
