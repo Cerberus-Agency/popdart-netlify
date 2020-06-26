@@ -300,7 +300,7 @@ body {
 
 #history h2 {
     color: #cc3366;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-style: italic;
     font-weight: 700;
     line-height: 1;
@@ -781,7 +781,7 @@ body {
 
     #history p.history-introduction {
         font-size: 1.2em;
-        width: 70%;
+        width: 80%;
         height: 15em;
         overflow: auto;
         margin-bottom: 5em;
@@ -951,7 +951,7 @@ body {
     } */
 }
 
-@media only screen and (min-device-width: 767px) and (max-device-width: 1024px) and (orientation:portrait) {
+@media only screen and (min-device-width: 767px) and (max-device-width: 1024px) {
     /* For portrait layouts only */
 
 
@@ -969,11 +969,13 @@ body {
         transition: text-decoration 0.5s ease;
     } 
 
-    /******* HOME PAGE ********/
-    /* #intro .content.mobile .intro-container {
-        font-size: 1em;
-    } */
+    .max-width-container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 600px;
+    }
 
+    /******* HOME PAGE ********/
 
     #intro .content.mobile .intro-container {
         background-image: url(../uploads/decoration-blue-quadrilateral.svg);
@@ -981,10 +983,40 @@ body {
         font-size: 1em;
         background-repeat: no-repeat;
         background-size: 95%;
-        background-position: left 0% bottom 30% !important;
-        background-size: 135% 65%;
+        background-size: 125% 65%;
+        display: grid;
+        grid-template-columns: .55fr .45fr;
+        /* grid-template-rows: 1fr .45fr;
+        grid-template-areas:
+            "house-picture packaging-picture""house-picture intro-introduction"; */
     }
 
+    .example-house img {
+        height: 350px;
+        max-width: 350px !important;
+        margin: -105px 0px -15px 0px;
+    }
+
+
+    .house-picture {
+        grid-area: house-picture;
+    }
+
+    .packaging-picture {
+        grid-area: packaging-picture;
+    }
+
+    .intro-introduction {
+        grid-area: intro-introduction;
+    }
+
+    .packaging img {
+        margin-left: 50%;
+        position: relative;
+        margin-top: 15px;
+        max-width: 350px !important;
+        width: 350px !important;
+    }
 
     .section {
         padding-top: 120px;
@@ -994,27 +1026,77 @@ body {
         padding-top: 150px;
     }
 
-    #history,
+    /* #history,
     #instructions,
     #inspiration,
     #content {
         background-size: 50%;
+    } */
+
+    /****** History *******/
+
+    #history {
+        background: url(../images/history_400.png) 0 23px repeat-x;
+        background-size: 50%;
+        z-index: 10;
+    }  
+
+    #history h2 {
+       font-size: 1.5em; 
     }
 
     #history .content {
-        height: calc(100vh - 175px);
+        /* height: calc(100vh - 175px); */
+        margin-top: 7%;
+    }
+
+    /******* Instrucitons ********/
+
+    #instructions {
+        background: url(../images/instructions_400.png) -25px 23px repeat-x;
+        background-size: 50%;
+        z-index: 20;
     }
 
     #instructions .content {
-        height: calc(100vh - 180px);
+        /* height: calc(100vh - 180px); */
+        margin-top: 8%;
+    }
+
+
+    .instruction-slide-content {
+        font-weight: 900;
+        line-height: 1.5;
+        /* grid-template-columns: .3fr .3fr 1fr; */
+        grid-template-rows: 1fr;
+        /* grid-template-areas: "instruction-number instruction-image instruction-text"; */
+        grid-column-gap: 1em; 
+    }
+
+    /******* Inspiration *******/
+
+    #inspiration {
+        background: url(../images/inspiration_400.png) 0 23px repeat-x;
+        background-size: 50%;
+        z-index: 30;
     }
 
     #inspiration .content {
-        height: calc(100vh - 185px);
+        /* height: calc(100vh - 185px); */
+        margin-top: 8%;
+    }
+
+    /******* Contact *******/
+
+    #contact {
+        background: url(../images/pdart-contact-mobilebg-edit.png) -24px 34px repeat-x;
+        background-size: 50%;
+        z-index: 40;
     }
 
     #contact .content {
-        height: calc(100vh - 200px);
+        /* height: calc(100vh - 200px); */
+        margin-top: 7%;
     }
 
     .wpforms-title {
@@ -1022,7 +1104,7 @@ body {
     }
 
     .logo-container {
-        margin-top: 4em;
+        margin-top: 0em;
     } 
 }
 
