@@ -18,7 +18,7 @@ package = "@netlify/plugin-sitemap"
   buildDir = "_site"
   exclude = [
     '_site/admin',
-    '_site/404',
+    '_site/404.html',
     '_site/google1a8c04ad0f009f35',
     '_site/_includes/assets/js'
   ]
