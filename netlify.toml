@@ -15,7 +15,7 @@
 package = "@netlify/plugin-sitemap"
  
   [plugins.inputs]
-  buildDir = ""
+  buildDir = "_site"
   exclude = [
     '/admin',
     '/404',
