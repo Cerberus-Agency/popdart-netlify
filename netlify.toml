@@ -11,7 +11,6 @@
 #  from = "/*"
 #  to = "/blog/:splat"
 
-
 [[plugins]]
 package = "@netlify/plugin-sitemap"
  
@@ -23,7 +22,7 @@ package = "@netlify/plugin-sitemap"
     'google1a8c04ad0f009f35',
     '_includes/assets/js'
   ]
-  
+
 # The default HTTP status code is 301, but you can define a different one e.g.
 # status = 302
 
