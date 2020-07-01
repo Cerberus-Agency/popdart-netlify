@@ -13,6 +13,7 @@ body {
     margin: 0;
 }
 
+
 /******* MOBILE FIRST (AND UNIVERSAL) *******/
 
 
@@ -202,7 +203,7 @@ body {
 }
 
 .max-width-container {
-    max-width: 360px;
+    max-width: 320px;
     margin: 0 auto;
 }
 
@@ -458,11 +459,13 @@ body {
 
 #contact .content {
     background: white;
-    height: inherit;
+    height:640px;
+    overflow: scroll;
 }
 
 .contact-forms-container {
     position: relative;
+    padding: 1px;
 }
 
 .tab-container {
@@ -554,7 +557,7 @@ body {
     .max-width-container {
         margin-left: auto;
         margin-right: auto;
-        max-width: 1200px;
+        max-width: 1800px;
     }
 
     /******* NAVIGATION *******/
@@ -875,8 +878,18 @@ body {
         padding: 1em 2em;
     }
 
+    #contact .content {
+        background: white;
+        height: inherit;
+    }
+
     #contact #retailers {
         display: block;
+    }
+
+    .logo-container {
+        text-align: center;
+        margin: -45px 0 5px 0;
     }
 }
 
@@ -1092,9 +1105,11 @@ body {
     }
 
     #contact .content {
-        /* height: calc(100vh - 200px); */
+        background: white;
+        height: inherit;
         margin-top: 7%;
     }
+
 
     .wpforms-title {
         display: block;
@@ -1142,10 +1157,14 @@ input[type=email] {
     display: block;
     font-family: 'Zilla Slab', sans-serif;
     font-size: 16px;
-    padding: 6px 10px;
-    height: 38px;
+    padding: 4px 6px;
+    height: 32px;
     width: 100%;
     line-height: 1.3;
+}
+
+label {
+    margin-bottom: 3px;
 }
 
 button[type="submit"] {
@@ -1341,6 +1360,7 @@ button[type="submit"] {
         z-index: 40;
     }
 
+
     #contact .content {
         /* height: calc(100vh - 200px); */
         margin-top: 9%;
@@ -1351,7 +1371,7 @@ button[type="submit"] {
     }
 
     .logo-container {
-        margin-top: 0em;
+        margin-top: -2em;
     } 
 }
 
@@ -1427,7 +1447,7 @@ button[type="submit"] {
     }
 
     .section#contact {
-        padding-top: 265px;
+        padding-top: 244px;
     }
 
     #history {
@@ -1683,6 +1703,13 @@ button[type="submit"] {
     }
     #inspiration .heading-image {
         margin-top: -7em;
+    }
+
+    #contact .content {
+        background: white;
+        height: inherit;
+        margin-top: 22px;
+        overflow: hidden
     }
 
     .contact-form {
@@ -2004,7 +2031,7 @@ button[type="submit"] {
     /******* Inspiration *******/
     #inspiration .inspiration-header {
         text-align: center;
-        width: 50%;
+        width: 35%;
         margin: -29px auto 50px;
     }
 
@@ -2030,6 +2057,7 @@ button[type="submit"] {
         background: white;
         height: inherit;
         margin-top: 27px;
+        overflow: hidden;
     }
 
     .contact-form {
