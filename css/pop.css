@@ -540,7 +540,7 @@ body {
 /******* DESKTOP STYLES *******/
 
 /* MIN width will change, this is optimal for large screens not small labtops and ipads 1750 and up*/
-@media (min-width: 1750px) {
+@media only screen and (min-width: 1750px) {
 
     html,
     body {
@@ -949,7 +949,7 @@ body {
     } */
 /* } */
 
-@media only screen and (min-device-width: 767px) and (max-device-width: 1000px) {
+@media only screen and (min-device-width: 767px) and (max-device-width: 1024px) {
     /* For portrait layouts only */
 
      body .hamburger {
@@ -1159,7 +1159,7 @@ button[type="submit"] {
     text-transform: uppercase;
 }
 
-@media only screen and (min-device-width: 1001px) and (max-device-width: 1300px) {
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1300px) {
     /* For portrait layouts only */
 
      body .hamburger {
@@ -1267,7 +1267,7 @@ button[type="submit"] {
         margin-left: auto;
         margin-right: auto;
         width: 90%;
-        height: 40em;
+        height: 28em;
         overflow: auto;
         border: white;
         border-style: solid;
@@ -1287,7 +1287,7 @@ button[type="submit"] {
 
     #instructions .content {
         /* height: calc(100vh - 180px); */
-        margin-top: 8%;
+        margin-top: 10%;
     }
 
     #instructions .instructions-header {
@@ -1327,7 +1327,7 @@ button[type="submit"] {
 
     #inspiration .content {
         /* height: calc(100vh - 185px); */
-        margin-top: 6%;
+        margin-top: 10%;
     }
 
     #inspiration-mobile-slider {
@@ -1336,14 +1336,14 @@ button[type="submit"] {
     /******* Contact *******/
 
     #contact {
-        background: url(../images/pdart-contact-mobilebg-edit.png) -62px 24px repeat-x;
+        background: url(../images/pdart-contact-mobilebg-edit.png) -62px 9px repeat-x;
         background-size: 72%;
         z-index: 40;
     }
 
     #contact .content {
         /* height: calc(100vh - 200px); */
-        margin-top: 7%;
+        margin-top: 9%;
     }
 
     .wpforms-title {
@@ -1353,4 +1353,691 @@ button[type="submit"] {
     .logo-container {
         margin-top: 0em;
     } 
+}
+
+@media only screen and (min-width: 1301px) and (max-width: 1499px) {
+    html,
+    body {
+        overflow: hidden;
+        height: 100%;
+    }
+
+    /******* UTILITY STYLES *******/
+
+
+    .max-width-container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+    }
+
+    /******* NAVIGATION *******/
+
+
+    #primary-menu {
+        margin-left: 0;
+    }
+
+    .menu-primary-container.is-active {
+        position: inherit;
+        top: 0;
+    }
+
+    #primary-menu li,
+    .menu-primary-container.is-active #primary-menu li {
+        background: transparent;
+        display: inline-block;
+        margin-right: 2em;
+        width: auto;
+    }
+
+    #primary-menu li a {
+        color: white;
+    }
+
+    .site-branding {
+        padding-left: 0;
+        position: relative;
+        width: auto;
+    }
+
+    .site-header {
+        justify-content: flex-start;
+        padding-left: 1em;
+    }
+
+    #site-navigation {
+        margin-right: 1em;
+        position: relative;
+    }
+
+    .site-title {
+        margin: 0 2em 0 0em;
+    }
+
+
+    /******* CONTENT *******/
+
+    .section {
+        height: 100vh;
+        width: 100vw;
+        padding-top: 240px;
+        position: absolute;
+        transform: translateY(100%);
+    }
+
+    .section#contact {
+        padding-top: 265px;
+    }
+
+    #history {
+        background: url(../images/history_400.png) 0px 77px repeat-x;
+        background-size: 30%;
+    }
+
+    #instructions {
+        background: url(../images/instructions_400.png) -29px 82px repeat-x;
+        background-size: 30%;
+    }
+
+    #inspiration {
+        background: url(../images/inspiration_400.png) -3px 83px repeat-x;
+        background-size: 30%;
+    }
+
+    #contact {
+        background: url(../images/pdart-contact-mobilebg-edit.png) 10px 84px repeat-x;
+        background-size: 43%;
+    }
+
+    #intro .content.mobile,
+    #history .content.mobile,
+    #instructions .content.mobile,
+    #inspiration .content.mobile,
+    a.mobile {
+        display: none;
+    }
+
+    a.desktop {
+        display: block;
+    }
+
+    #intro .content {
+        display: grid;
+        place-items: center;
+    }
+
+    .intro-introduction p {
+        width: 85%;
+        margin: -50px 0px 10px -140px;
+    }
+
+    #history .content.desktop {
+        background-color: #ffcc33;
+        height: inherit;
+        display: grid;
+        place-items: center;
+    }
+
+    #instructions .content.desktop {
+        background-color: #99cc66;
+        height: calc(100vh - 250px);
+        display: grid;
+        place-items: center;
+    }
+
+    #inspiration .content {
+        background-color: #6699cc;
+        height: calc(100vh - 260px);
+        display: grid;
+        place-items: center;
+    }
+
+    #contact .content.desktop {
+        background-color: white;
+        height: calc(100vh - 365px);
+        display: grid;
+        place-items: center;
+    }
+
+    /****** INTRO DESKTOP *******/
+
+    #intro {
+        padding-top: 0px;
+    }
+
+    #intro .content.desktop {
+        background-image: url(../uploads/decoration-blue-quadrilateral.svg);
+        background-position: left 0% bottom 30% !important;
+        background-repeat: no-repeat;
+        background-size: 95%;
+        background-position: left 0% bottom 30% !important;
+        background-size: 135% 65%;
+    }
+
+    #intro .content.desktop .intro-container {
+        display: grid;
+        font-size: 1.2em;
+        grid-template-columns: .55fr .45fr;
+        grid-template-rows: 1fr .45fr;
+        grid-template-areas:
+            "house-picture packaging-picture""house-picture intro-introduction";
+        line-height: 1.5;
+    }
+
+    .house-picture {
+        grid-area: house-picture;
+    }
+
+    .packaging-picture {
+        grid-area: packaging-picture;
+    }
+
+    .intro-introduction {
+        grid-area: intro-introduction;
+    }
+
+    .example-house img {
+        width:65%;
+        margin: 15px 0px -15px 0px;
+    }
+
+    .packaging img {
+        width: 80%;
+    }
+
+    /****** HISTORY DESKTOP *******/
+
+    #history h2 {
+        font-size: 2em;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        width: 38%;
+    }
+
+    .history-title-decoration {
+        max-width: 220px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #history .history-container {
+        display: grid;
+        grid-template-columns: .7fr .9fr;
+        grid-template-rows: 100px 1fr;
+        grid-template-areas: "history-header history-header""history-picture history-text";
+        margin: 0 auto;
+        max-width: 1600px;
+    }
+
+    .history-header {
+        grid-area: history-header;
+        margin: -110px 0px 1px 0px;
+    }
+
+    .history-picture {
+        grid-area: history-picture;
+    }
+
+    .history-picture img {
+        max-width: 80%;
+        margin: -110px 0px 2px 6px
+    }
+
+    .history-text {
+        grid-area: history-text;
+        display: grid;
+        place-items: center;
+    }
+
+    #history p.history-introduction {
+        font-size: 1.2em;
+        width: 80%;
+        height: 15em;
+        overflow: auto;
+        margin-bottom: 5em;
+        border: white;
+        border-style: solid;
+        border-width: 8px;
+        padding: 35px;
+        border-radius: 15px;
+        background-color: rgb(254, 223, 138);
+        margin-bottom: 50%;
+    }
+
+        ::-webkit-scrollbar {
+            width: 18px;
+            height: 15px;
+        }
+        ::-webkit-scrollbar-thumb {
+            height: 6px;
+            border: 4px solid rgba(0, 0, 0, 0);
+            background-clip: padding-box;
+            -webkit-border-radius: 25px;
+            background-color: white;
+            -webkit-box-shadow: inset -8px -8px 0px rgba(0, 0, 0, 0), inset 8px 8px 0px rgba(0, 0, 0, 0);
+        }
+
+    /****** INSTRUCTIONS DESKTOP *******/
+
+    #instructions .instructions-header {
+        text-align: center;
+        width: 50%;
+        margin: -25px auto 10px;
+    }
+
+    .instruction-slide-content {
+        font-weight: 900;
+        line-height: 1.5;
+        grid-template-columns: .3fr .3fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "instruction-number instruction-image instruction-text";
+        grid-column-gap: 1em;
+    }
+
+    .instruction-image {
+        grid-area: instruction-image;
+    }
+
+    .instruction-text {
+        grid-area: instruction-text;
+    }
+
+    .instruction-number {
+        grid-area: instruction-number;
+    }
+
+    .instruction div {
+        padding: .25em;
+        display: grid;
+    }
+
+    .instruction-text {
+        font-size: 1.4em;
+    }
+
+    .ingredients {
+        display: block;
+    }
+    /******* Inspiration *******/
+    #inspiration .inspiration-header {
+        text-align: center;
+        width: 50%;
+        margin: -29px auto 50px;
+    }
+
+    /****** CONTACT DESKTOP *******/
+
+    .tab {
+        display: none;
+    }
+
+    .tab-content {
+        background-color: white;
+        position: inherit;
+    }
+
+    .heading-image {
+        margin-bottom: 1em;
+    }
+    #inspiration .heading-image {
+        margin-top: -7em;
+    }
+
+    .contact-form {
+        flex-basis: 40%;
+        padding: 1em 2em;
+    }
+
+    #contact #retailers {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 1749px) {
+    html,
+    body {
+        overflow: hidden;
+        height: 100%;
+    }
+
+    /******* UTILITY STYLES *******/
+
+
+    .max-width-container {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+    }
+
+    /******* NAVIGATION *******/
+
+
+    #primary-menu {
+        margin-left: 0;
+    }
+
+    .menu-primary-container.is-active {
+        position: inherit;
+        top: 0;
+    }
+
+    #primary-menu li,
+    .menu-primary-container.is-active #primary-menu li {
+        background: transparent;
+        display: inline-block;
+        margin-right: 2em;
+        width: auto;
+    }
+
+    #primary-menu li a {
+        color: white;
+    }
+
+    .site-branding {
+        padding-left: 0;
+        position: relative;
+        width: auto;
+    }
+
+    .site-header {
+        justify-content: flex-start;
+        padding-left: 1em;
+    }
+
+    #site-navigation {
+        margin-right: 1em;
+        position: relative;
+    }
+
+    .site-title {
+        margin: 0 2em 0 0em;
+    }
+
+
+    /******* CONTENT *******/
+
+    .section {
+        height: 100vh;
+        width: 100vw;
+        padding-top: 240px;
+        position: absolute;
+        transform: translateY(100%);
+    }
+
+    .section#contact {
+        padding-top: 265px;
+    }
+
+    #history {
+        background: url(../images/history_400.png) 0px 77px repeat-x;
+        background-size: 30%;
+    }
+
+    #instructions {
+        background: url(../images/instructions_400.png) -29px 79px repeat-x;
+        background-size: 30%;
+    }
+
+    #inspiration {
+        background: url(../images/inspiration_400.png) -3px 85px repeat-x;
+        background-size: 30%;
+    }
+
+    #contact {
+        background: url(../images/pdart-contact-mobilebg-edit.png) 11px 83px repeat-x;
+        background-size: 43%;
+    }
+
+    #intro .content.mobile,
+    #history .content.mobile,
+    #instructions .content.mobile,
+    #inspiration .content.mobile,
+    a.mobile {
+        display: none;
+    }
+
+    a.desktop {
+        display: block;
+    }
+
+    #intro .content {
+        display: grid;
+        place-items: center;
+    }
+
+    .intro-introduction p {
+        width: 85%;
+        margin: -50px 0px 10px -140px;
+    }
+
+    #history .content.desktop {
+        background-color: #ffcc33;
+        height: inherit;
+        display: grid;
+        place-items: center;
+    }
+
+    #instructions .content.desktop {
+        background-color: #99cc66;
+        height: calc(100vh - 250px);
+        display: grid;
+        place-items: center;
+    }
+
+    #inspiration .content {
+        background-color: #6699cc;
+        height: calc(100vh - 260px);
+        display: grid;
+        place-items: center;
+        margin-top: 28px;
+    }
+
+    #contact .content.desktop {
+        background-color: white;
+        height: calc(100vh - 365px);
+        display: grid;
+        place-items: center;
+    }
+
+    /****** INTRO DESKTOP *******/
+
+    #intro {
+        padding-top: 0px;
+    }
+
+    #intro .content.desktop {
+        background-image: url(../uploads/decoration-blue-quadrilateral.svg);
+        background-position: left 0% bottom 30% !important;
+        background-repeat: no-repeat;
+        background-size: 95%;
+        background-position: left 0% bottom 30% !important;
+        background-size: 135% 65%;
+    }
+
+    #intro .content.desktop .intro-container {
+        display: grid;
+        font-size: 1.2em;
+        grid-template-columns: .55fr .45fr;
+        grid-template-rows: 1fr .45fr;
+        grid-template-areas:
+            "house-picture packaging-picture""house-picture intro-introduction";
+        line-height: 1.5;
+    }
+
+    .house-picture {
+        grid-area: house-picture;
+    }
+
+    .packaging-picture {
+        grid-area: packaging-picture;
+    }
+
+    .intro-introduction {
+        grid-area: intro-introduction;
+    }
+
+    .example-house img {
+        width:65%;
+        margin: 15px 0px -15px 0px;
+    }
+
+    .packaging img {
+        width: 80%;
+    }
+
+    /****** HISTORY DESKTOP *******/
+
+    #history h2 {
+        font-size: 2em;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        width: 38%;
+    }
+
+    .history-title-decoration {
+        max-width: 220px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #history .history-container {
+        display: grid;
+        grid-template-columns: .7fr .9fr;
+        grid-template-rows: 100px 1fr;
+        grid-template-areas: "history-header history-header""history-picture history-text";
+        margin: 0 auto;
+        max-width: 1500px;
+    }
+
+    .history-header {
+        grid-area: history-header;
+        margin: -100px 0px 1px 0px;
+    }
+
+    .history-picture {
+        grid-area: history-picture;
+    }
+
+    .history-picture img {
+        max-width: 80%;
+        margin: -150px 0px 23px -30px
+    }
+
+    .history-text {
+        grid-area: history-text;
+        display: grid;
+        place-items: center;
+    }
+
+    #history p.history-introduction {
+        font-size: 1.2em;
+        width: 80%;
+        height: 15em;
+        overflow: auto;
+        margin-bottom: 5em;
+        border: white;
+        border-style: solid;
+        border-width: 8px;
+        padding: 35px;
+        border-radius: 15px;
+        background-color: rgb(254, 223, 138);
+        margin-bottom: 305px;
+    }
+
+        ::-webkit-scrollbar {
+            width: 18px;
+            height: 15px;
+        }
+        ::-webkit-scrollbar-thumb {
+            height: 6px;
+            border: 4px solid rgba(0, 0, 0, 0);
+            background-clip: padding-box;
+            -webkit-border-radius: 25px;
+            background-color: white;
+            -webkit-box-shadow: inset -8px -8px 0px rgba(0, 0, 0, 0), inset 8px 8px 0px rgba(0, 0, 0, 0);
+        }
+
+    /****** INSTRUCTIONS DESKTOP *******/
+
+    #instructions .instructions-header {
+        text-align: center;
+        width: 40%;
+        margin: -7px auto 10px;
+    }
+
+    .instruction-slide-content {
+        font-weight: 900;
+        line-height: 1.5;
+        grid-template-columns: .3fr .3fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "instruction-number instruction-image instruction-text";
+        grid-column-gap: 1em;
+    }
+
+    .instruction-image {
+        grid-area: instruction-image;
+    }
+
+    .instruction-text {
+        grid-area: instruction-text;
+    }
+
+    .instruction-number {
+        grid-area: instruction-number;
+    }
+
+    .instruction div {
+        padding: .25em;
+        display: grid;
+    }
+
+    .instruction-text {
+        font-size: 1.4em;
+    }
+
+    .ingredients {
+        display: block;
+    }
+    /******* Inspiration *******/
+    #inspiration .inspiration-header {
+        text-align: center;
+        width: 50%;
+        margin: -29px auto 50px;
+    }
+
+    /****** CONTACT DESKTOP *******/
+
+    .tab {
+        display: none;
+    }
+
+    .tab-content {
+        background-color: white;
+        position: inherit;
+    }
+
+    .heading-image {
+        margin-bottom: 1em;
+    }
+    #inspiration .heading-image {
+        margin-top: -7em;
+    }
+
+    #contact .content {
+        background: white;
+        height: inherit;
+        margin-top: 27px;
+    }
+
+    .contact-form {
+        flex-basis: 40%;
+        padding: 1em 2em;
+    }
+
+    #contact #retailers {
+        display: block;
+    }
 }
