@@ -19,7 +19,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPlugin(pluginSEO, {
   title: "The Original Shotgun Gingerbread House",
-  description: "The Original Shotgun Gingerbread House.",
+  description: "The National Register of Historic Places named New Orleans home to the largest and most diverse collection of shotgun homes in the U.S. Decorate your own colorful shotgun house and share a NOLA original with the world! Don’t forget to like, share, and check out Facebook for inspiration!",
   url: "https://shotgungingerbreadhouse.com",
   author: "Veronica Cho and Cerberus Agency",
   image: "/static/uploads/PDART-box-home.png",
