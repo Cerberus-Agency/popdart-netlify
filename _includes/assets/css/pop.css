@@ -233,7 +233,7 @@ body {
 }
 
 #intro .content {
-    background-image: url(/uploads/pdart-home-bluebox-mobile.png);
+    background-image: url(/static/uploads/pdart-home-bluebox-mobile.png);
     background-repeat: no-repeat;
     color: white;
     line-height: 1.2;
@@ -897,7 +897,7 @@ body {
     }
 
     #primary-menu li a {
-        color:#cc3366;
+        color: #cc3366;
         text-decoration: none;
         transition: text-decoration 0.5s ease;
     } 
@@ -911,7 +911,6 @@ body {
     /******* HOME PAGE ********/
 
     #intro .content.mobile .intro-container {
-        /* background-image: url(../uploads/decoration-blue-quadrilateral.svg); */
         background-position: left 0% bottom 30% !important;
         font-size: 1.3em;
         background-repeat: no-repeat;
@@ -1120,7 +1119,6 @@ button[type="submit"] {
     /******* HOME PAGE ********/
 
     #intro .content.mobile .intro-container {
-        /* background-image: url(../uploads/decoration-blue-quadrilateral.svg); */
         background-position: left 0% bottom 30% !important;
         font-size: 1.5em;
         background-repeat: no-repeat;
@@ -1502,7 +1500,7 @@ button[type="submit"] {
         display: grid;
         grid-template-columns: .7fr .9fr;
         grid-template-rows: 100px 1fr;
-        grid-template-areas: "history-header history-header""history-picture history-text";
+        grid-template-areas: "history-header history-header" "history-picture history-text";
         margin: 0 auto;
         max-width: 1600px;
     }
@@ -1729,7 +1727,7 @@ button[type="submit"] {
     }
 
     #contact {
-        background: url(/static/images/pdart-contact-mobilebg-edit.png) 11px 83px repeat-x;
+        background: url(/static/images/pdart-contact-mobile-bg-edit.png) 11px 83px repeat-x;
         background-size: 43%;
     }
 
@@ -1791,7 +1789,7 @@ button[type="submit"] {
     }
 
     #intro .content.desktop {
-        background-image: url(../uploads/decoration-blue-quadrilateral.svg);
+        background-image: url(/static/uploads/decoration-blue-quadrilateral.svg);
         background-position: left 0% bottom 30% !important;
         background-repeat: no-repeat;
         background-size: 95%;
@@ -1805,7 +1803,7 @@ button[type="submit"] {
         grid-template-columns: .55fr .45fr;
         grid-template-rows: 1fr .45fr;
         grid-template-areas:
-            "house-picture packaging-picture""house-picture intro-introduction";
+            "house-picture packaging-picture" "house-picture intro-introduction";
         line-height: 1.5;
     }
 
