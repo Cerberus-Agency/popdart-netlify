@@ -958,7 +958,7 @@ body {
     .section#contact {
         padding-top: 150px;
     }
-    
+
     /****** History *******/
 
     #history {
@@ -1181,7 +1181,7 @@ button[type="submit"] {
     /****** History *******/
 
     #history {
-        background: url(../images/history_400.png) 0 23px repeat-x;
+        background: url(/static/images/history_400.png) 0 23px repeat-x;
         background-size: 50%;
         z-index: 10;
     }  
@@ -1255,7 +1255,7 @@ button[type="submit"] {
     /******* Inspiration *******/
 
     #inspiration {
-        background: url(../images/inspiration_400.png) 0 23px repeat-x;
+        background: url(/static/images/inspiration_400.png) 0 23px repeat-x;
         background-size: 50%;
         z-index: 30;
     }
