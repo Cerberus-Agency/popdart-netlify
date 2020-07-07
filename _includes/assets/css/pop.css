@@ -172,7 +172,7 @@ a.desktop {
 }
 
 .site-title a {
-    background: url(static/images/pdart-logo-white.svg) center center no-repeat;
+    background: url(/static/images/pdart-logo-white.svg) center center no-repeat;
     display: inline-block;
     height: 85px;
     margin-top: 1em;
@@ -233,7 +233,7 @@ html, body {
 }
 
 #intro .content {
-    background-image: url(static/uploads/pdart-home-bluebox-mobile.png);
+    background-image: url(/static/uploads/pdart-home-bluebox-mobile.png);
     background-repeat: no-repeat;
     color: white;
     line-height: 1.2;
@@ -279,7 +279,7 @@ html, body {
 /******* HISTORY *******/
 
 #history {
-    background: url(static/images/history_400.png) 0 20px repeat-x;
+    background: url(/static/images/history_400.png) 0 20px repeat-x;
     background-size: 100%;
     z-index: 10;
 }
@@ -612,22 +612,22 @@ html, body {
     }
 
     #history {
-        background: url(static/images/history_400.png) 0px 20px repeat-x;
+        background: url(/static/images/history_400.png) 0px 20px repeat-x;
         background-size: 30%;
     }
 
     #instructions {
-        background: url(static/images/instructions_400.png) -37px 21px repeat-x;
+        background: url(/static/images/instructions_400.png) -37px 21px repeat-x;
         background-size: 30%;
     }
 
     #inspiration {
-        background: url(static/images/inspiration_400.png) -3px 28px repeat-x;
+        background: url(/static/images/inspiration_400.png) -3px 28px repeat-x;
         background-size: 30%;
     }
 
     #contact {
-        background: url(static/images/pdart-contact-mobilebg-edit.png) 14px 25px repeat-x;
+        background: url(/static/images/pdart-contact-mobilebg-edit.png) 14px 25px repeat-x;
         background-size: 43%;
     }
 
@@ -688,7 +688,7 @@ html, body {
     }
 
     #intro .content.desktop {
-        background-image: url(static/uploads/decoration-blue-quadrilateral.svg);
+        background-image: url(/static/uploads/decoration-blue-quadrilateral.svg);
         background-position: left 0% bottom 30% !important;
         background-repeat: no-repeat;
         background-size: 95%;
@@ -961,7 +961,7 @@ html, body {
     /****** History *******/
 
     #history {
-        background: url(static/images/history_400.png) 0 23px repeat-x;
+        background: url(/static/images/history_400.png) 0 23px repeat-x;
         background-size: 50%;
         z-index: 10;
     }  
@@ -978,7 +978,7 @@ html, body {
     /******* Instrucitons ********/
 
     #instructions {
-        background: url(static/images/instructions_400.png) -25px 23px repeat-x;
+        background: url(/static/images/instructions_400.png) -25px 23px repeat-x;
         background-size: 50%;
         z-index: 20;
     }
@@ -1001,7 +1001,7 @@ html, body {
     /******* Inspiration *******/
 
     #inspiration {
-        background: url(static/images/inspiration_400.png) 0 23px repeat-x;
+        background: url(/static/images/inspiration_400.png) 0 23px repeat-x;
         background-size: 50%;
         z-index: 30;
     }
@@ -1014,7 +1014,7 @@ html, body {
     /******* Contact *******/
 
     #contact {
-        background: url(static/images/pdart-contact-mobilebg-edit.png) -62px 24px repeat-x;
+        background: url(/static/images/pdart-contact-mobilebg-edit.png) -62px 24px repeat-x;
         background-size: 72%;
         z-index: 40;
     }
@@ -1179,7 +1179,7 @@ button[type="submit"] {
     /****** History *******/
 
     #history {
-        background: url(static/images/history_400.png) 0 23px repeat-x;
+        background: url(/static/images/history_400.png) 0 23px repeat-x;
         background-size: 50%;
         z-index: 10;
     }  
@@ -1213,7 +1213,7 @@ button[type="submit"] {
     /******* Instrucitons ********/
 
     #instructions {
-        background: url(static/images/instructions_400.png) -25px 23px repeat-x;
+        background: url(/static/images/instructions_400.png) -25px 23px repeat-x;
         background-size: 50%;
         z-index: 20;
     }
@@ -1253,7 +1253,7 @@ button[type="submit"] {
     /******* Inspiration *******/
 
     #inspiration {
-        background: url(static/images/inspiration_400.png) 0 23px repeat-x;
+        background: url(/static/images/inspiration_400.png) 0 23px repeat-x;
         background-size: 50%;
         z-index: 30;
     }
@@ -1269,7 +1269,7 @@ button[type="submit"] {
     /******* Contact *******/
 
     #contact {
-        background: url(static/images/pdart-contact-mobilebg-edit.png) -62px 9px repeat-x;
+        background: url(/static/images/pdart-contact-mobilebg-edit.png) -62px 9px repeat-x;
         background-size: 72%;
         z-index: 40;
     }
@@ -1365,22 +1365,22 @@ button[type="submit"] {
     }
 
     #history {
-        background: url(static/images/history_400.png) 0px 77px repeat-x;
+        background: url(/static/images/history_400.png) 0px 77px repeat-x;
         background-size: 30%;
     }
 
     #instructions {
-        background: url(static/images/instructions_400.png) -29px 82px repeat-x;
+        background: url(/static/images/instructions_400.png) -29px 82px repeat-x;
         background-size: 30%;
     }
 
     #inspiration {
-        background: url(static/images/inspiration_400.png) -3px 83px repeat-x;
+        background: url(/static/images/inspiration_400.png) -3px 83px repeat-x;
         background-size: 30%;
     }
 
     #contact {
-        background: url(static/images/pdart-contact-mobilebg-edit.png) 10px 84px repeat-x;
+        background: url(/static/images/pdart-contact-mobilebg-edit.png) 10px 84px repeat-x;
         background-size: 43%;
     }
 
@@ -1712,22 +1712,22 @@ button[type="submit"] {
     }
 
     #history {
-        background: url(static/images/history_400.png) 0px 77px repeat-x;
+        background: url(/static/images/history_400.png) 0px 77px repeat-x;
         background-size: 30%;
     }
 
     #instructions {
-        background: url(static/images/instructions_400.png) -29px 79px repeat-x;
+        background: url(/static/images/instructions_400.png) -29px 79px repeat-x;
         background-size: 30%;
     }
 
     #inspiration {
-        background: url(static/images/inspiration_400.png) -3px 85px repeat-x;
+        background: url(/static/images/inspiration_400.png) -3px 85px repeat-x;
         background-size: 30%;
     }
 
     #contact {
-        background: url(static/images/pdart-contact-mobile-bg-edit.png) 11px 83px repeat-x;
+        background: url(/static/images/pdart-contact-mobilebg-edit.png) 11px 83px repeat-x;
         background-size: 43%;
     }
 

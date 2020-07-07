@@ -124,7 +124,7 @@
     display: none;
 }
 .slick-arrow {
-    background: url(static/images/pdart-instructions-arrow.svg) center center
+    background: url(/static/images/pdart-instructions-arrow.svg) center center
         no-repeat;
     text-indent: -9999px;
     height: 28px;
