@@ -82,7 +82,6 @@ a.desktop {
 .logo-container {
     text-align: center;
     margin: -15px 0 5px 0;
-    ;
 }
 
 .error-404 {
@@ -209,7 +208,7 @@ html, body {
 
 .section {
     height: 100vh;
-    /* width: 100vw; */
+    width: 100vw;
     padding-top: 150px;
     position: absolute;
     transform: translateY(100%);
@@ -444,7 +443,7 @@ html, body {
 /******* CONTACT *******/
 
 #contact {
-    background: url(/static/images/pdart-contact-mobilebg-edit.png) -15px 13px repeat-x;
+    background: url(/static/images/pdart-contact-bg4-EDIT.png) -15px 13px repeat-x;
     background-size: 143%;
     z-index: 40;
 }
@@ -627,7 +626,7 @@ html, body {
     }
 
     #contact {
-        background: url(/static/images/pdart-contact-mobilebg-edit.png) 14px 25px repeat-x;
+        background: url(/static/images/pdart-contact-bg4-EDIT.png) 14px 25px repeat-x;
         background-size: 43%;
     }
 
@@ -1014,7 +1013,7 @@ html, body {
     /******* Contact *******/
 
     #contact {
-        background: url(/static/images/pdart-contact-mobilebg-edit.png) -62px 24px repeat-x;
+        background: url(/static/images/pdart-contact-bg4-EDIT.png) -48px 24px repeat-x;
         background-size: 72%;
         z-index: 40;
     }
@@ -1269,14 +1268,14 @@ button[type="submit"] {
     /******* Contact *******/
 
     #contact {
-        background: url(/static/images/pdart-contact-mobilebg-edit.png) -62px 9px repeat-x;
+        background: url(/static/images/pdart-contact-bg4-EDIT.png) -84px 9px repeat-x;
         background-size: 72%;
         z-index: 40;
     }
 
 
     #contact .content {
-        /* height: calc(100vh - 200px); */
+        height: calc(100vh - 200px);
         margin-top: 9%;
     }
 
@@ -1302,7 +1301,7 @@ button[type="submit"] {
     .max-width-container {
         margin-left: auto;
         margin-right: auto;
-        max-width: 1200px;
+        max-width: 1000px;
     }
 
     /******* NAVIGATION *******/
@@ -1380,7 +1379,7 @@ button[type="submit"] {
     }
 
     #contact {
-        background: url(/static/images/pdart-contact-mobilebg-edit.png) 10px 84px repeat-x;
+        background: url(/static/images/pdart-contact-bg4-EDIT.png) 10px 84px repeat-x;
         background-size: 43%;
     }
 
@@ -1422,7 +1421,7 @@ button[type="submit"] {
 
     #inspiration .content {
         background-color: #6699cc;
-        height: calc(100vh - 260px);
+        height: calc(100vh - 198px);
         display: grid;
         place-items: center;
     }
@@ -1441,7 +1440,7 @@ button[type="submit"] {
     }
 
     #intro .content.desktop {
-        background-image: url(static/uploads/decoration-blue-quadrilateral.svg);
+        background-image: url(/static/uploads/decoration-blue-quadrilateral.svg);
         background-position: left 0% bottom 30% !important;
         background-repeat: no-repeat;
         background-size: 95%;
@@ -1507,7 +1506,7 @@ button[type="submit"] {
 
     .history-header {
         grid-area: history-header;
-        margin: -110px 0px 1px 0px;
+        margin: -43px 0px 1px 0px;
     }
 
     .history-picture {
@@ -1614,6 +1613,8 @@ button[type="submit"] {
 
     .heading-image {
         margin-bottom: 1em;
+        max-width: 70%; 
+        margin-top: 1em;
     }
     #inspiration .heading-image {
         margin-top: -7em;
@@ -1727,7 +1728,7 @@ button[type="submit"] {
     }
 
     #contact {
-        background: url(/static/images/pdart-contact-mobilebg-edit.png) 11px 83px repeat-x;
+        background: url(/static/images/pdart-contact-bg4-EDIT.png) 11px 83px repeat-x;
         background-size: 43%;
     }
 
@@ -2247,7 +2248,7 @@ button[type="submit"] {
     /******* CONTACT *******/
     
     #contact {
-        background: url(/static/images/pdart-contact-mobilebg-edit.png) -19px 35px repeat-x;
+        background: url(/static/images/pdart-contact-bg4-EDIT.png) -19px 35px repeat-x;
         background-size: 143%;
         z-index: 40;
         width:119%
