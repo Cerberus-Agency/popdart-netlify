@@ -24,14 +24,14 @@
 }
 
 #inspiration-slider.slick-slider {
-    width: 80%;
+    width: 75%;
 }
 
 #inspiration-slider.slick-slider img {
     width: 275px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 767px) {
     #inspiration-slider.slick-slider {
         width: 100%;
     }
@@ -40,9 +40,10 @@
 .slick-list {
     position: relative;
     display: block;
-    overflow: hidden;
+    overflow: scroll;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 .slick-list:focus {
     outline: none;
@@ -54,6 +55,7 @@
 
 #instructions .slick-list {
     background: white;
+    overflow: hidden;
 }
 
 .slick-slider .slick-track,
@@ -99,7 +101,7 @@
 }
 .slick-slide img {
     display: block;
-    width: 275px;
+    /* width: 275px; */
 }
 .slick-slide.slick-loading img {
     display: none;
@@ -122,14 +124,14 @@
     display: none;
 }
 .slick-arrow {
-    background: url(../static/images/pdart-instructions-arrow.svg) center center
+    background: url(static/images/pdart-instructions-arrow.svg) center center
         no-repeat;
     text-indent: -9999px;
     height: 28px;
     width: 52px;
 }
 #inspiration-slider .slick-arrow {
-    background: url(../static/images/pdart-inspiration-arrow.svg) center center
+    background: url(static/images/pdart-inspiration-arrow.svg) center center
         no-repeat;
 }
 .slick-next {

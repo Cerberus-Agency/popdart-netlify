@@ -3,7 +3,7 @@
 
 $('#site-navigation').on('click', '.link-history:not(.clicked)', function(event){
 	console.log(this);
-	$('#history').addClass('slideToTop');
+	$('#history').removeClass('slideToBottom').addClass('slideToTop');
 
 	$('.link-history').addClass('clicked');
 	event.preventDefault();
