@@ -1790,7 +1790,7 @@ button[type="submit"] {
     }
 
     #intro .content.desktop {
-        background-image: url(static/uploads/decoration-blue-quadrilateral.svg);
+        background-image: url(/static/img/decoration-blue-quadrilateral.svg);
         background-position: left 0% bottom 30% !important;
         background-repeat: no-repeat;
         background-size: 95%;
