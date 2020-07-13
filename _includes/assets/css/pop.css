@@ -135,7 +135,7 @@ a.desktop {
     pointer-events: inherit;
     position: fixed;
     top: 0;
-    width: -webkit-fill-available;
+    width: 100%;
     z-index: 100;
 }
 
@@ -1991,6 +1991,10 @@ button[type="submit"] {
         overflow: hidden;
         height: 100%;
         width: -webkit-fill-available;
+    }
+
+    .site-header{
+        width: 85%;
     }
     
     #container {
